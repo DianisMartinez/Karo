@@ -9,10 +9,10 @@ function App() {
   const [mensaje, setMensaje] = useState("💛 Bienvenida 💛");
 
   const fotos = [
-    { id: 1, src: "/foto1.jpg", texto: "Ese día en la Cafetería", link: "/cafeteria" },
-    { id: 2, src: "/foto2.jpg", texto: "Un recuerdo especial 💕", link: "/especial" },
-    { id: 3, src: "/foto3.jpg", texto: "Las cabritas 🐐 jaja", link: "/cabritas" },
-    { id: 3, src: "/foto4.jpg"},
+    { id: 1, src: "/foto1.jpg", texto: "Bosque", link: "/cafeteria" },
+    { id: 2, src: "/foto2.jpg", texto: "Nieve", link: "/especial" },
+    { id: 3, src: "/foto3.jpg", texto: "Playita", link: "/cabritas" },
+
   ];
 
   return (
@@ -21,7 +21,7 @@ function App() {
       <nav className="navbar navbar-dark bg-warning">
         <div className="container-fluid d-flex justify-content-between">
           {/* Logo o título */}
-          <Link className="navbar-brand" to="/"> Galería 🐎 ☺︎ 🐒 </Link>
+          <Link className="navbar-brand" to="/"> 🐎 ☺︎ 🐒 </Link>
 
           {/* Links de navegación */}
           <div>
@@ -49,7 +49,6 @@ function App() {
     mensaje
   )}
 </p>
-
 <button
   className="btn btn-warning"
   onClick={() =>
@@ -59,7 +58,7 @@ function App() {
   Apreta aqui!
 </button>
 
-              <h2 className="mt-4 mb-4">  Some memories with U </h2>
+              <h2 className="mt-4 mb-4"> ☺︎ Days I won’t forget ☺︎ </h2>
 
               {/* Galería */}
               <div className="row g-4">
@@ -72,7 +71,7 @@ function App() {
                           src={foto.src}
                           alt={foto.texto}
                           className="card-img-top rounded img-hover"
-                          style={{ height: "250px", objectFit: "cover" }}
+                          style={{ height: "600px", objectFit: "cover" }}
                         />
                       </Link>
                       <div className="card-body">

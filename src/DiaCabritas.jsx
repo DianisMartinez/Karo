@@ -1,13 +1,20 @@
 const fotos = [
-  { id: 4, src: "/foto4.jpg", texto: "Ese día en la playa 🌊" },
+  { id: 4, src: "/foto4.jpg", texto: "Chill viendo el atardecer" },
   { id: 5, src: "/foto5.jpg", texto: "El atardecer increíble 🌅" },
-  { id: 6, src: "/foto6.jpg", texto: "Comiendo algo rico 🍔" }, 
+  { id: 6, src: "/foto6.jpg", texto: "La natha llamando" }, 
 ];
 
 function DiaCabritas() {
   return (
-    <div className="container py-5">
-      <h1 className="text-center mb-4">Huntington City Beach</h1>
+    <div className="container py-5 text-center">
+      <a
+        href="https://maps.app.goo.gl/PbxS9YZ7RHZiBAH8A/"
+        target="_blank"
+        rel="noopener noreferrer"
+        style={{ textDecoration: "none", color: "inherit" }}
+      >
+        <h1>Huntington Beach</h1>
+      </a>
       <p className="text-center">
         Ese día fue uno de mis favoritos, ya que comimos comida Thai, vimos el
         atardecer mientras nos tomábamos fotos y también me metí al mar, pero tú
