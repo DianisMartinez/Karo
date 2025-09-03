@@ -12,6 +12,7 @@ function App() {
     { id: 1, src: "/foto1.jpg", texto: "Ese día en la Cafetería", link: "/cafeteria" },
     { id: 2, src: "/foto2.jpg", texto: "Un recuerdo especial 💕", link: "/especial" },
     { id: 3, src: "/foto3.jpg", texto: "Las cabritas 🐐 jaja", link: "/cabritas" },
+    { id: 3, src: "/foto4.jpg"},
   ];
 
   return (
