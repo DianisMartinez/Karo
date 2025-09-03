@@ -1,10 +1,17 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&family=Dancing+Script:wght@500&display=swap');
+
+body {
+  font-family: 'Poppins', sans-serif;
+  background-color: #f8f5f2; /* fondo suave */
+  color: #333;
+}
 :root {
-  font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
+  font-family: "Lucida Console", "Courier New", monospace;
   line-height: 1.5;
   font-weight: 400;
 
   color-scheme: light dark;
-  color: rgba(255, 255, 255, 0.87);
+  color: #d5d539aa;
   background-color: #242424;
 
   font-synthesis: none;
