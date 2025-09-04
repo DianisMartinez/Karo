@@ -4,6 +4,7 @@ import Videos from "./Videos.jsx";
 import DiaCafeteria from "./DiaCafeteria.jsx";
 import DiaEspecial from "./DiaEspecial.jsx";
 import DiaCabritas from "./DiaCabritas.jsx";
+import Privado from "./Privado.jsx";
 
 function App() {
   const [mensaje, setMensaje] = useState("💛 Bienvenida 💛");
@@ -27,6 +28,7 @@ function App() {
           <div>
             <Link className="btn btn-light mx-1" to="/">Fotos</Link>
             <Link className="btn btn-light mx-1" to="/videos">Videos</Link>
+            <Link className="btn btn-light mx-1" to="/privado">Privado</Link>
           </div>
         </div>
       </nav>
@@ -92,6 +94,7 @@ function App() {
         <Route path="/cafeteria" element={<DiaCafeteria />} />
         <Route path="/especial" element={<DiaEspecial />} />
         <Route path="/cabritas" element={<DiaCabritas />} />
+        <Route path="/privado" element={<Privado />} />
       </Routes>
     </div>
   );

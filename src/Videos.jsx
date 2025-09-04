@@ -1,5 +1,3 @@
-
-
 function Videos() {
   return (
     <div className="container text-center py-5">
@@ -15,7 +13,8 @@ function Videos() {
               poster="/foto1.jpg"
               style={{ maxHeight: "400px", objectFit: "cover" }}
             >
-              <source src="/video.mp4" type="video/mp4" />
+              {/* Aquí llamas tu archivo mov desde public */}
+              <source src="/video1.mov" type="video/mp4" />
               Tu navegador no soporta este formato de video.
             </video>
             <div className="card-body">
