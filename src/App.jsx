@@ -4,15 +4,15 @@ import Videos from "./Videos.jsx";
 import DiaCafeteria from "./DiaCafeteria.jsx";
 import DiaEspecial from "./DiaEspecial.jsx";
 import DiaCabritas from "./DiaCabritas.jsx";
-import Privado from "./Privado.jsx";
+
 
 function App() {
-  const [mensaje, setMensaje] = useState("💛 Bienvenida 💛");
+  const [mensaje, setMensaje] = useState("Bienvenida Princess 💛 ");
 
   const fotos = [
-    { id: 1, src: "/foto1.jpg", texto: "Bosque", link: "/cafeteria" },
-    { id: 2, src: "/foto2.jpg", texto: "Nieve", link: "/especial" },
-    { id: 3, src: "/foto3.jpg", texto: "Playita", link: "/cabritas" },
+    { id: 1, src: "/foto1.jpg", texto: "Pijamada Real", link: "/cafeteria" },
+    { id: 2, src: "/foto2.jpg", texto: "Nosotras", link: "/especial" },
+    { id: 3, src: "/foto3.jpg", texto: "Karito Nevada City", link: "/cabritas" },
 
   ];
 
@@ -22,13 +22,12 @@ function App() {
       <nav className="navbar navbar-dark bg-warning">
         <div className="container-fluid d-flex justify-content-between">
           {/* Logo o título */}
-          <Link className="navbar-brand" to="/"> 🐎 ☺︎ 🐒 </Link>
+          <Link className="navbar-brand" to="/"> 🐎 ☺︎ 🐒 ☺︎ 😺</Link>
 
           {/* Links de navegación */}
           <div>
             <Link className="btn btn-light mx-1" to="/">Fotos</Link>
             <Link className="btn btn-light mx-1" to="/videos">Videos</Link>
-            <Link className="btn btn-light mx-1" to="/privado">Privado</Link>
           </div>
         </div>
       </nav>
@@ -54,18 +53,21 @@ function App() {
 <button
   className="btn btn-warning"
   onClick={() =>
-    setMensaje("https://media1.tenor.com/m/gaEpIfzxzPEAAAAC/pedro-monkey-puppet.gif")
+    setMensaje("https://media1.tenor.com/m/hHIzNqQrGsEAAAAd/i-fucking-love-you-godku.gif")
   }
 >
   Apreta aqui!
 </button>
 
-              <h2 className="mt-4 mb-4"> ☺︎ Days I won’t forget ☺︎ </h2>
+              <h2 className="mt-4 mb-4"> 
+                ✨ Quise hacer algo diferente, no un simple collage de fotos que quedara aburrido. Mejor dejar esto en internet para que, más adelante, cuando quieras, puedas entrar y revivir un poquito de las memorias que compartimos contigo.
+                <br /><br/>
+                Espero que lo disfrutes, y quiero decirte lo mucho que te queremos. Te deseamos toda la suerte del mundo en esta nueva etapa y experiencia. Sabemos que la vas a romper porque eres la RAJAAA. 💛 </h2>
 
               {/* Galería */}
-              <div className="row g-4">
+              <div className="row g-4 ">
                 {fotos.map((foto) => (
-                  <div key={foto.id} className="col-12 col-sm-6 col-md-4">
+                  <div key={foto.id} className="col-12 col-sm-6 col-md-4 ">
                     <div className="card shadow-sm h-100">
                       {/* Foto con Link a otra página */}
                       <Link to={foto.link}>
@@ -94,7 +96,6 @@ function App() {
         <Route path="/cafeteria" element={<DiaCafeteria />} />
         <Route path="/especial" element={<DiaEspecial />} />
         <Route path="/cabritas" element={<DiaCabritas />} />
-        <Route path="/privado" element={<Privado />} />
       </Routes>
     </div>
   );

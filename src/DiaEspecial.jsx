@@ -1,26 +1,18 @@
 
 const fotos = [
-  { id: 4, src: "/foto10.jpg", texto: "Loquitas"},
-  { id: 5, src: "/foto11.jpg", texto: "Bonita vista" },
+  { id: 10, src: "/foto10.jpg", texto: "Loquitas"},
+  { id: 11, src: "/foto11.jpg", texto: "Bonita vista" },
   { id: 6, src: "/foto12.jpg", texto: "Esta es mi foto favorita ever 🥺" }, 
+  { id: 12, src: "/foto12.jpg", texto: "1111 🥺" }, 
 ];
-
-
-
-
 
 function DiaEspecial() {
     return (
       <div className="container py-5 text-center">
-      <a
-        href="https://maps.app.goo.gl/tAG25psy9hCTD7JU7/"
-        target="_blank"
-        rel="noopener noreferrer"
-        style={{ textDecoration: "none", color: "inherit" }}
-      >
-        <h1>Bosque Nacional Tahoe</h1>
-      </a>
-      <p>Ese día fuimos a la nieve, 10/10. Me acuerdo que queríamos tanto "Esquiar" que al final se dio y fuimos no más. También lo mucho que nos reímos, caminamos caleta y   por 2 horas fuimos niñeras jajaja</p>
+      <h1>Pijamada real ⛄️🎄 </h1>
+    <div className="alert alert-primary mt-4 text-center">
+      Me acuerdo de este día que traté de llevar un vino para hacer algo que había probado en un evento, pero ¡me quedó horrible, jajaja! Nadie lo tomó. Tú llevaste arepita y quedó deliciosa, Ari llevó tamales, ¡todo bacán! Y Sofi con su presencia.
+    </div>
       <div className="row">
         {fotos.map((foto) => (
           <div key={foto.id} className="col-md-6 col-lg-4 mb-4">

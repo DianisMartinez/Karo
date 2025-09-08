@@ -1,25 +1,23 @@
 const fotos = [
-  { id: 4, src: "/foto7.jpg", texto: "No se que nos creiamos mirando al infinito" },
-  { id: 5, src: "/foto8.jpg", texto: "Loquitas" },
-  { id: 6, src: "/foto9.jpg", texto: "Comiendo algo rico" }, 
+  { id: 4, src: "/foto4.jpg", texto: "Jugando UNO 🃈" },
+  { id: 5, src: "/foto5.jpg", texto: "🥹" },
+  { id: 6, src: "/foto6.jpg", texto: "Las sin fronteras LOL😝" },
+  { id: 7, src: "/foto7.jpg", texto: "El vino que me salio de la  👎🏽 😶‍🌫️" },
+  { id: 8, src: "/foto8.jpg", texto: "Otra fotito linda 💕" },
+  { id: 9, src: "/foto9.jpg", texto: "Desayunito 🥐🍪☕️" },
+  { id: 10, src: "/foto10.jpg", texto: "🥹" },
 ];
-
 
 function DiaCafeteria() {
   return (
     <div className="container py-5 text-center">
-      <a
-        href="https://maps.app.goo.gl/d9ge5m3uK7gJ75RZ8/"
-        target="_blank"
-        rel="noopener noreferrer"
-        style={{ textDecoration: "none", color: "inherit" }}
-      >
-        <h1>South Yuba River State Park</h1>
-      </a>
-      <p>Ese día fuimos por primera vez al río, la pasamos rico, comimos hamburguesas, fuimos por helado, jugamos pickleball, pintamos y tomamos una siesta 💛</p>
+      <h1>Sleep Over 2024 🎄❄️</h1>
+      <p>
+      ✨ Una pijamada que disfruté muchísimo. Ese día conocí a Sofía y la pasamos increíble. Recuerdo que llevé un vino para preparar algo, aunque no resultó como esperaba, pero igual nos reímos mucho. Jugamos UNO, conversamos de todo y compartimos momentos únicos. Sofi me hablaba de piedras y de ciencia, algo que le apasionaba, mientras Karo me contaba sobre su familia. Yo las escuchaba y sentía lo especial y lo buenas que serian para mi ✨
+      </p>
       <div className="row">
         {fotos.map((foto) => (
-          <div key={foto.id} className="col-md-6 col-lg-4 mb-4">
+          <div key={foto.id} className="col-md-6 col-lg-4 mb-4 ">
             <div className="card shadow rounded">
               <img
                 src={foto.src}
