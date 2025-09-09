@@ -1,7 +1,18 @@
 const fotos = [
-  { id: 1, src: "/foto4.jpg", texto: "Chill viendo el atardecer" },
-  { id: 2, src: "/foto5.jpg", texto: "El atardecer increíble 🌅" },
-  { id: 3, src: "/foto6.jpg", texto: "La natha llamando" }, 
+  
+  { id: 11, src: "/foto11.jpg", texto: "h" }, 
+  { id: 12, src: "/foto12.jpg", texto: "f" }, 
+  { id: 13, src: "/foto13.jpg", texto: "i" }, 
+  { id: 14, src: "/foto14.jpg", texto: "w" }, 
+  { id: 15, src: "/foto15.jpg", texto: "y" }, 
+  { id: 16, src: "/foto16.jpg", texto: "3" }, 
+  { id: 17, src: "/foto17.jpg", texto: "2" }, 
+  { id: 18, src: "/foto18.jpg", texto: "2" }, 
+  { id: 19, src: "/foto19.jpg", texto: "2" }, 
+  { id: 20, src: "/foto20.jpg", texto: "2" }, 
+  { id: 21, src: "/foto21.jpg", texto: "2" }, 
+  { id: 22, src: "/foto22.jpg", texto: "2" }, 
+  { id: 23, src: "/foto23.jpg", texto: "2" }, 
 ];
 
 function DiaCabritas() {
