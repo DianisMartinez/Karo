@@ -5,6 +5,7 @@ import DiaCafeteria from "./DiaCafeteria.jsx";
 import DiaEspecial from "./DiaEspecial.jsx";
 import DiaCabritas from "./DiaCabritas.jsx";
 
+
 function App() {
   const [mensaje, setMensaje] = useState("Bienvenida Princess 💛 ");
 

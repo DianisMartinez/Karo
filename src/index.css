@@ -88,3 +88,131 @@ button:focus-visible {
 .lead img:hover {
   transform: scale(1.1);
 }
+.card-img-top {
+  width: 100%;
+  height: 300px; /* puedes ajustar a 250px o 200px */
+  object-fit: cover; /* recorta y centra la imagen */
+  border-top-left-radius: 0.5rem; /* opcional para bordes suaves */
+  border-top-right-radius: 0.5rem;
+}
+/* -------------------- ESTILO PERSONALIZADO CABRITAS -------------------- */
+
+/* Fondo claro con un detalle amarillo pastel */
+body {
+  background: linear-gradient(135deg, #fffdf7, #fff6cc);
+  font-family: 'Poppins', sans-serif;
+  color: #444;
+}
+
+/* Títulos principales */
+h1 {
+
+  font-size: 3rem;
+  font-weight: 600;
+  background: linear-gradient(90deg, #ffd633, #ffb347);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  margin-bottom: 1rem;
+  text-shadow: 1px 1px 6px rgba(255, 200, 0, 0.2);
+}
+
+/* Cards con más vida */
+.card {
+  border: none;
+  border-radius: 18px;
+  background: #fffef9;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.card:hover {
+  transform: translateY(-6px) rotate(-1deg);
+  box-shadow: 0 10px 20px rgba(0,0,0,0.2);
+}
+
+/* Línea amarilla bajo las imágenes */
+.card-img-top {
+  border-bottom: 4px solid #ffd633;
+}
+
+/* Texto dentro de la card */
+.card-text {
+  font-weight: 500;
+  color: #444;
+}
+
+/* Efecto floral 🌻 */
+.card-body::after {
+  content: "🌻";
+  position: absolute;
+  top: -10px;
+  right: -10px;
+  font-size: 1.8rem;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+.card:hover .card-body::after {
+  opacity: 1;
+}
+
+/* Link con estilo cálido */
+a {
+  color: #f5a623;
+  font-weight: bold;
+  text-decoration: none;
+}
+a:hover {
+  color: #d97a00;
+  text-decoration: underline wavy #ffd633;
+}
+
+/* Caballo animado 🐴 */
+@keyframes floatHorse {
+  0% { transform: translateY(0); opacity: 0.6; }
+  50% { transform: translateY(-20px); opacity: 1; }
+  100% { transform: translateY(0); opacity: 0.6; }
+}
+.horse-deco {
+  position: fixed;
+  bottom: 10px;
+  right: 10px;
+  font-size: 2.5rem;
+  animation: floatHorse 3s infinite ease-in-out;
+  pointer-events: none;
+}
+.music-btn {
+  background: linear-gradient(135deg, #ffd633, #ffb347); /* amarillo cálido */
+  color: #4a2c00; /* marrón suave */
+  font-family: 'Poppins', sans-serif;
+  font-weight: 600;
+  font-size: 1rem;
+  padding: 12px 24px;
+  border: none;
+  border-radius: 12px;
+  cursor: pointer;
+  box-shadow: 0 4px 10px rgba(255, 200, 0, 0.4);
+  transition: all 0.3s ease-in-out;
+  margin-top: 15px;
+}
+
+/* Efecto al pasar el mouse */
+.music-btn:hover {
+  transform: scale(1.08);
+  background: linear-gradient(135deg, #ffec80, #ffb84d);
+  box-shadow: 0 6px 14px rgba(255, 180, 0, 0.5);
+}
+
+/* Efecto al hacer clic */
+.music-btn:active {
+  transform: scale(0.95);
+}
+
+/* Animación sutil de brillo 🌟 */
+@keyframes pulse {
+  0% { box-shadow: 0 0 0 rgba(255, 215, 0, 0.6); }
+  50% { box-shadow: 0 0 25px rgba(255, 215, 0, 0.8); }
+  100% { box-shadow: 0 0 0 rgba(255, 215, 0, 0.6); }
+}
+
+.music-btn {
+  animation: pulse 3s infinite;
+}
