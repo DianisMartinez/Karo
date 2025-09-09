@@ -5,7 +5,6 @@ import DiaCafeteria from "./DiaCafeteria.jsx";
 import DiaEspecial from "./DiaEspecial.jsx";
 import DiaCabritas from "./DiaCabritas.jsx";
 
-
 function App() {
   const [mensaje, setMensaje] = useState("Bienvenida Princess 💛 ");
 
@@ -13,18 +12,19 @@ function App() {
     { id: 1, src: "/foto1.jpg", texto: "Pijamada Real", link: "/cafeteria" },
     { id: 2, src: "/foto2.jpg", texto: "Nosotras", link: "/especial" },
     { id: 3, src: "/foto3.jpg", texto: "Karito Nevada City", link: "/cabritas" },
-
   ];
-
+  const gifs = [
+    "https://media1.tenor.com/m/-YgVT9qYyDIAAAAC/sentient-dog1.gif",
+    "https://media.tenor.com/u0M6xZbLEbUAAAAM/cat-dance.gif",
+    "https://media1.tenor.com/m/aEDvHjwCmpwAAAAC/cowboys-cowboy.gif",
+    "https://media.tenor.com/2roX3uxz_68AAAAM/cute-happy.gif"
+  ];
   return (
     <div>
       {/* Menú de navegación */}
       <nav className="navbar navbar-dark bg-warning">
         <div className="container-fluid d-flex justify-content-between">
-          {/* Logo o título */}
           <Link className="navbar-brand" to="/"> 🐎 ☺︎ 🐒 ☺︎ 😺</Link>
-
-          {/* Links de navegación */}
           <div>
             <Link className="btn btn-light mx-1" to="/">Fotos</Link>
             <Link className="btn btn-light mx-1" to="/videos">Videos</Link>
@@ -33,49 +33,56 @@ function App() {
       </nav>
 
       <Routes>
-        {/* Página de fotos */}
+        {/* Página principal con fotos */}
         <Route
           path="/"
           element={
             <div className="container py-5 text-center">
               <h1 className="fw-bold mb-3">Karito en California</h1>
+              
               <p className="lead">
-  {mensaje.startsWith("http") ? (
-    <img 
-      src={mensaje} 
-      alt="gif sorpresa" 
-      style={{ width: "100px", borderRadius: "30px" }}
-    />
-  ) : (
-    mensaje
-  )}
-</p>
-<button
-  className="btn btn-warning"
-  onClick={() =>
-    setMensaje("https://media1.tenor.com/m/hHIzNqQrGsEAAAAd/i-fucking-love-you-godku.gif")
-  }
->
-  Apreta aqui!
-</button>
+                {mensaje.startsWith("http") ? (
+                  <img 
+                    src={mensaje} 
+                    alt="gif sorpresa" 
+                    style={{ width: "120px", borderRadius: "20px" }}
+                  />
+                ) : (
+                  mensaje
+                )}
+              </p>
+
+              <button
+                   className="btn btn-warning"
+                   onClick={() => {
+                   const random = Math.floor(Math.random() * gifs.length);
+                   setMensaje(gifs[random]);
+                   }}
+                   >
+                  Apreta aquí!
+              </button>
 
               <h2 className="mt-4 mb-4"> 
-                ✨ Quise hacer algo diferente, no un simple collage de fotos que quedara aburrido. Mejor dejar esto en internet para que, más adelante, cuando quieras, puedas entrar y revivir un poquito de las memorias que compartimos contigo.
+                ✨ Quise hacer algo diferente, no un simple collage de fotos que quedara aburrido. 
+                Mejor dejar esto en internet para que, más adelante, cuando quieras, 
+                puedas entrar y revivir un poquito de las memorias que compartimos contigo.
                 <br /><br/>
-                Espero que lo disfrutes, y quiero decirte lo mucho que te queremos. Te deseamos toda la suerte del mundo en esta nueva etapa y experiencia. Sabemos que la vas a romper porque eres la RAJAAA. 💛 </h2>
+                Espero que lo disfrutes, y quiero decirte lo mucho que te queremos. 
+                Te deseamos toda la suerte del mundo en esta nueva etapa y experiencia. 
+                Sabemos que la vas a romper porque eres la RAJAAA. 💛 
+              </h2>
 
               {/* Galería */}
-              <div className="row g-4 ">
+              <div className="row g-4">
                 {fotos.map((foto) => (
-                  <div key={foto.id} className="col-12 col-sm-6 col-md-4 ">
+                  <div key={foto.id} className="col-12 col-sm-6 col-md-4">
                     <div className="card shadow-sm h-100">
-                      {/* Foto con Link a otra página */}
                       <Link to={foto.link}>
                         <img
                           src={foto.src}
-                          alt={foto.texto}
+                          alt={`Foto: ${foto.texto}`}
+                          loading="lazy"
                           className="card-img-top rounded img-hover"
-                          style={{ height: "600px", objectFit: "cover" }}
                         />
                       </Link>
                       <div className="card-body">
@@ -92,7 +99,7 @@ function App() {
         {/* Página de videos */}
         <Route path="/videos" element={<Videos />} />
 
-        {/* Páginas individuales para recuerdos */}
+        {/* Recuerdos */}
         <Route path="/cafeteria" element={<DiaCafeteria />} />
         <Route path="/especial" element={<DiaEspecial />} />
         <Route path="/cabritas" element={<DiaCabritas />} />
