@@ -13,12 +13,7 @@ const videos = [
     src: "/video2.mp4",
     descripcion: "Otro gran recuerdo para no olvidar.",
   },
-  {
-    id: 3,
-    title: "Video de Recuerdo 2",
-    src: "/video3.mp4",
-    descripcion: "Otro gran recuerdo para no olvidar.",
-  },
+ 
   {
     id: 4,
     title: "Video de Recuerdo 2",
@@ -49,12 +44,7 @@ const videos = [
     src: "/video8.mp4",
     descripcion: "Otro gran recuerdo para no olvidar.",
   },
-  {
-    id: 9,
-    title: "Video de Recuerdo 2",
-    src: "/video9.mp4",
-    descripcion: "Otro gran recuerdo para no olvidar.",
-  },
+ 
   {
     id: 10,
     title: "Video de Recuerdo 2",
