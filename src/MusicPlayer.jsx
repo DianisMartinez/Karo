@@ -34,7 +34,7 @@ function MusicPlayer() {
     <audio ref={audioRef} id="song" src="/song.mp3" loop>
         </audio>
       <button className="music-btn" onClick={togglePlay}>
-        {playing ? "⏸️ Pausar música" : "▶️ Reproducir música"}
+        {playing ? "⏸" : "▶︎"}
       </button>
     </div>
   );

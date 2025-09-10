@@ -1,102 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&family=Dancing+Script:wght@500&display=swap');
 
-body {
-  font-family: 'Poppins', sans-serif;
-  background-color: #f8f5f2; /* fondo suave */
-  color: #333;
-}
-:root {
-  font-family: "Lucida Console", "Courier New", monospace;
-  line-height: 1.5;
-  font-weight: 400;
-
-  color-scheme: light dark;
-  color: #d5d539aa;
-  background-color: #242424;
-
-  font-synthesis: none;
-  text-rendering: optimizeLegibility;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-}
-
-a {
-  font-weight: 500;
-  color: #646cff;
-  text-decoration: inherit;
-}
-a:hover {
-  color: #535bf2;
-}
-
-body {
-  margin: 0;
-  display: flex;
-  place-items: center;
-  min-width: 320px;
-  min-height: 100vh;
-}
-
-h1 {
-  font-size: 3.2em;
-  line-height: 1.1;
-}
-
-button {
-  border-radius: 8px;
-  border: 1px solid transparent;
-  padding: 0.6em 1.2em;
-  font-size: 1em;
-  font-weight: 500;
-  font-family: inherit;
-  background-color: #1a1a1a;
-  cursor: pointer;
-  transition: border-color 0.25s;
-}
-button:hover {
-  border-color: #646cff;
-}
-button:focus,
-button:focus-visible {
-  outline: 4px auto -webkit-focus-ring-color;
-}
-
-@media (prefers-color-scheme: light) {
-  :root {
-    color: #213547;
-    background-color: #ffffff;
-  }
-  a:hover {
-    color: #747bff;
-  }
-  button {
-    background-color: #f9f9f9;
-  }
-}
-.img-hover {
-  transition: transform 0.3s, box-shadow 0.3s;
-  cursor: pointer;
-}
-
-.img-hover:hover {
-  transform: scale(1.05);
-  box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.2);
-}
-.lead img {
-  transition: transform 0.3s ease-in-out;
-}
-.lead img:hover {
-  transform: scale(1.1);
-}
-.card-img-top {
-  width: 100%;
-  height: 300px; /* puedes ajustar a 250px o 200px */
-  object-fit: cover; /* recorta y centra la imagen */
-  border-top-left-radius: 0.5rem; /* opcional para bordes suaves */
-  border-top-right-radius: 0.5rem;
-}
-/* -------------------- ESTILO PERSONALIZADO CABRITAS -------------------- */
-
 /* Fondo claro con un detalle amarillo pastel */
 body {
   background: linear-gradient(135deg, #fffdf7, #fff6cc);
@@ -104,19 +7,25 @@ body {
   color: #444;
 }
 
-/* Títulos principales */
-h1 {
-
-  font-size: 3rem;
-  font-weight: 600;
-  background: linear-gradient(90deg, #ffd633, #ffb347);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  margin-bottom: 1rem;
-  text-shadow: 1px 1px 6px rgba(255, 200, 0, 0.2);
+/* Imágenes con efecto hover */
+.img-hover {
+  transition: transform 0.3s, box-shadow 0.3s;
+  cursor: pointer;
+}
+.img-hover:hover {
+  transform: scale(1.05);
+  box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.2);
 }
 
-/* Cards con más vida */
+/* Imágenes dentro de .lead */
+.lead img {
+  transition: transform 0.3s ease-in-out;
+}
+.lead img:hover {
+  transform: scale(1.1);
+}
+
+/* Cards */
 .card {
   border: none;
   border-radius: 18px;
@@ -128,13 +37,14 @@ h1 {
   transform: translateY(-6px) rotate(-1deg);
   box-shadow: 0 10px 20px rgba(0,0,0,0.2);
 }
-
-/* Línea amarilla bajo las imágenes */
 .card-img-top {
+  width: 100%;
+  height: 300px;
+  object-fit: cover;
+  border-top-left-radius: 0.5rem;
+  border-top-right-radius: 0.5rem;
   border-bottom: 4px solid #ffd633;
 }
-
-/* Texto dentro de la card */
 .card-text {
   font-weight: 500;
   color: #444;
@@ -154,7 +64,7 @@ h1 {
   opacity: 1;
 }
 
-/* Link con estilo cálido */
+/* Links */
 a {
   color: #f5a623;
   font-weight: bold;
@@ -165,54 +75,45 @@ a:hover {
   text-decoration: underline wavy #ffd633;
 }
 
-/* Caballo animado 🐴 */
-@keyframes floatHorse {
-  0% { transform: translateY(0); opacity: 0.6; }
-  50% { transform: translateY(-20px); opacity: 1; }
-  100% { transform: translateY(0); opacity: 0.6; }
+/* Decorador en el iframe */
+.embed-responsive-item {
+  position: relative;
+  border-radius: 18px;
+  overflow: hidden;
 }
-.horse-deco {
-  position: fixed;
+.embed-responsive-item::after {
+  content: "🐴";
+  position: absolute;
   bottom: 10px;
   right: 10px;
-  font-size: 2.5rem;
-  animation: floatHorse 3s infinite ease-in-out;
+  font-size: 2rem;
+  opacity: 0;
+  transition: opacity 0.4s ease, transform 0.4s ease;
   pointer-events: none;
 }
-.music-btn {
-  background: linear-gradient(135deg, #ffd633, #ffb347); /* amarillo cálido */
-  color: #4a2c00; /* marrón suave */
+.embed-responsive-item:hover::after {
+  opacity: 1;
+  transform: scale(1.2) rotate(-10deg);
+}
+/* Sección de videos con estilo consistente */
+.videos-section {
+  background: #fffef9;
+  border: 2px solid #ffd633;
+  border-radius: 18px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  padding: 40px;
+  transition: box-shadow 0.3s ease;
+}
+
+.videos-section:hover {
+  box-shadow: 0 8px 20px rgba(255, 214, 51, 0.3); /* brillo dorado */
+}
+
+.videos-title {
   font-family: 'Poppins', sans-serif;
-  font-weight: 600;
-  font-size: 1rem;
-  padding: 12px 24px;
-  border: none;
-  border-radius: 12px;
-  cursor: pointer;
-  box-shadow: 0 4px 10px rgba(255, 200, 0, 0.4);
-  transition: all 0.3s ease-in-out;
-  margin-top: 15px;
-}
-
-/* Efecto al pasar el mouse */
-.music-btn:hover {
-  transform: scale(1.08);
-  background: linear-gradient(135deg, #ffec80, #ffb84d);
-  box-shadow: 0 6px 14px rgba(255, 180, 0, 0.5);
-}
-
-/* Efecto al hacer clic */
-.music-btn:active {
-  transform: scale(0.95);
-}
-
-/* Animación sutil de brillo 🌟 */
-@keyframes pulse {
-  0% { box-shadow: 0 0 0 rgba(255, 215, 0, 0.6); }
-  50% { box-shadow: 0 0 25px rgba(255, 215, 0, 0.8); }
-  100% { box-shadow: 0 0 0 rgba(255, 215, 0, 0.6); }
-}
-
-.music-btn {
-  animation: pulse 3s infinite;
+  font-size: 2rem;
+  font-weight: 700;
+  color: #f5a623;
+  text-align: center;
+  margin-bottom: 2rem;
 }

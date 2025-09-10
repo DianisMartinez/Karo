@@ -1,6 +1,5 @@
 import MusicPlayer from "./MusicPlayer.jsx";
 
-
 const fotos = [
   
   { id: 11, src: "/foto11.jpg", texto: "h" }, 
@@ -23,6 +22,7 @@ const fotos = [
   { id: 28, src: "/foto28.jpg", texto: "3" }, 
   { id: 29, src: "/foto29.jpg", texto: "3" }, 
   { id: 30, src: "/foto30.jpg", texto: "3" }, 
+  { id: 31, src: "/foto31.jpg", texto: "2" }, 
 ];
 
 function DiaCabritas() {

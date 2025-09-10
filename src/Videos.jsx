@@ -1,34 +1,98 @@
-const fotos = [
-  { id: 4, src: "/foto7.jpg", texto: "No se que nos creiamos mirando al infinito" },
-  { id: 5, src: "/foto8.jpg", texto: "Loquitas" },
-  { id: 6, src: "/foto9.jpg", texto: "Comiendo algo rico" },
+import React from "react";
+
+const videos = [
+  {
+    id: 1,
+    title: "Video de Recuerdo 1",
+    src: "/video1.mp4",
+    descripcion: "Un momento especial compartido juntos.",
+  },
+  {
+    id: 2,
+    title: "Video de Recuerdo 2",
+    src: "/video2.mp4",
+    descripcion: "Otro gran recuerdo para no olvidar.",
+  },
+  {
+    id: 3,
+    title: "Video de Recuerdo 2",
+    src: "/video3.mp4",
+    descripcion: "Otro gran recuerdo para no olvidar.",
+  },
+  {
+    id: 4,
+    title: "Video de Recuerdo 2",
+    src: "/video4.mp4",
+    descripcion: "Otro gran recuerdo para no olvidar.",
+  },
+  {
+    id: 5,
+    title: "Video de Recuerdo 2",
+    src: "/video5.mp4",
+    descripcion: "Otro gran recuerdo para no olvidar.",
+  },
+  {
+    id: 6,
+    title: "Video de Recuerdo 2",
+    src: "/video6.mp4",
+    descripcion: "Otro gran recuerdo para no olvidar.",
+  },
+  {
+    id:7 ,
+    title: "Video de Recuerdo 2",
+    src: "/video7.mp4",
+    descripcion: "Otro gran recuerdo para no olvidar.",
+  },
+  {
+    id: 8,
+    title: "Video de Recuerdo 2",
+    src: "/video8.mp4",
+    descripcion: "Otro gran recuerdo para no olvidar.",
+  },
+  {
+    id: 9,
+    title: "Video de Recuerdo 2",
+    src: "/video9.mp4",
+    descripcion: "Otro gran recuerdo para no olvidar.",
+  },
+  {
+    id: 10,
+    title: "Video de Recuerdo 2",
+    src: "/video10.mp4",
+    descripcion: "Otro gran recuerdo para no olvidar.",
+  },
+  {
+    id: 11,
+    title: "Video de Recuerdo 2",
+    src: "/video11.mp4",
+    descripcion: "Otro gran recuerdo para no olvidar.",
+  },
+  {
+    id: 12,
+    title: "Video de Recuerdo 2",
+    src: "/video12.mp4",
+    descripcion: "Otro gran recuerdo para no olvidar.",
+  },
 ];
 
-function DiaCafeteria() {
+function Videos() {
   return (
-    <div className="container py-5 text-center">
-      <h1>Sleep Over 2024</h1>
-      <p>
-        Una pijamdaa la cuyal la pasew muy bien , cocnoci a sofia ese dia y la
-        pasamos increible tambien recuerdo que lleve un vinmo para hacer eso pero
-        me salio como el pico. Jugamos uno y charlamos de todo. Me acuerdo que
-        sofi me hablala de piedras y de cierncia que le gustaba, karo conttaba
-        hacerca de su familia y por mientras yo analizaba y las escuchaba.
-      </p>
+    <div className="container py-4">
+      <h2 className="mb-5 text-center">Nuestros Videos</h2>
       <div className="row">
-        {fotos.map((foto) => (
-          <div key={foto.id} className="col-md-6 col-lg-4 mb-4">
-            <div className="card shadow rounded">
-              <img
-                src={foto.src}
-                alt={`Recuerdo especial ${foto.id}`}
-                className="card-img-top"
-                style={{ height: "500px", objectFit: "cover" }}
-              />
-              <div className="card-body p-2 d-flex justify-content-center align-items-center">
-                <p className="card-text m-0 text-center">{foto.texto}</p>
-              </div>
+        {videos.map((video) => (
+          <div key={video.id} className="col-md-4 mb-4 d-flex flex-column align-items-center">
+            <div className="embed-responsive embed-responsive-16by9 mb-2" style={{ width: "200%", maxWidth: "200px" }}>
+              <iframe
+                className="embed-responsive-item"
+                src={video.src}
+                title={video.title}
+                allowFullScreen
+                style={{ width: "100%", height: "400px", border: "none", borderRadius: "20px" }}
+              ></iframe>
             </div>
+            <h5>{video.title}</h5>
+            <p className="text-center">{video.descripcion}</p>
           </div>
         ))}
       </div>
@@ -36,4 +100,4 @@ function DiaCafeteria() {
   );
 }
 
-export default DiaCafeteria;
+export default Videos;
