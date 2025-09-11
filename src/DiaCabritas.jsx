@@ -2,11 +2,15 @@ import MusicPlayer from "./MusicPlayer.jsx";
 
 const fotos = [
   
-  { id: 11, src: "/foto11.jpg", texto: "h" }, 
-  { id: 12, src: "/foto12.jpg", texto: "f" }, 
-  { id: 13, src: "/foto13.jpg", texto: "i" }, 
-  { id: 14, src: "/foto14.jpg", texto: "w" }, 
-  { id: 15, src: "/foto15.jpg", texto: "y" }, 
+  { 
+    id: 11, 
+    src: "/foto11.jpg", 
+    texto: "Mi host family hizo una comida para todas nosotras y terminamos el día viendo el bonito atardecer junto a las chiquillas. Al final de la noche, me caí por las escaleras y la única que me vio fue Karo 🤣" 
+  },
+  { id: 12, src: "/foto12.jpg", texto: "Navidad 2024 Sofi and Karo viendo el aborlito de navidad" }, 
+  { id: 13, src: "/foto13.jpg", texto: "Karo and Dianita  in Downtown" }, 
+  { id: 14, src: "/foto14.jpg", texto: "Con las chiquillas Organizaomos una fiesta sorpresa para sofi kareli trajo un pastel y compartimos todas (incluso Liliana and Sam que te aman!" }, 
+  { id: 15, src: "/foto15.jpg", texto: "Sofi and Karo new years eveing despidiendo el 2024 👯‍♂️" }, 
   { id: 16, src: "/foto16.jpg", texto: "3" }, 
   { id: 17, src: "/foto17.jpg", texto: "2" }, 
   { id: 18, src: "/foto18.jpg", texto: "2" }, 
