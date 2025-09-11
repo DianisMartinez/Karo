@@ -12,20 +12,31 @@ function App() {
 
   const fotos = [
     { id: 1, src: "/foto1.webp", texto: "Pijamada Real", link: "/cafeteria" },
-    { id: 2, src: "/foto2.webp", texto: "Nosotras", link: "/especial" },
+    { id: 2, src: "/foto2.webp", texto: "Las Californianas", link: "/especial" },
     { id: 3, src: "/foto3.webp", texto: "Karito Nevada City", link: "/cabritas" },
   ];
 
   const gifs = [
-    "https://media1.tenor.com/m/-YgVT9qYyDIAAAAC/sentient-dog1.gif",
-    "https://media.tenor.com/u0M6xZbLEbUAAAAM/cat-dance.gif",
-    "https://media1.tenor.com/m/aEDvHjwCmpwAAAAC/cowboys-cowboy.gif",
-    "https://media.tenor.com/2roX3uxz_68AAAAM/cute-happy.gif"
+    "https://media.tenor.com/LiyatP6gqWcAAAAM/stitch.gif",
+    "https://media1.tenor.com/m/d6hQVo9jalUAAAAd/californiaaa-california.gif",
+    "https://i.makeagif.com/media/12-27-2023/ZsNC1Z.gif",
+    "https://i.pinimg.com/originals/60/5f/89/605f89878dfdba790d4f025888503f06.gif",
+    "https://i.pinimg.com/originals/5f/6f/0c/5f6f0cc5877d1076d3eccdc4b0d5964d.gif",
+    "https://no-cdn.shortpixel.ai/client/to_avif,q_lossy,ret_wait/https://shortpixel.com/blog/wp-content/uploads/2023/12/nyan-cat.gif"
   ];
 
   if (!juegoGanado) {
     return <JuegoInicio onGanar={() => setJuegoGanado(true)} />;
   }
+
+  const handleClickGif = () => {
+    let randomGif = gifs[Math.floor(Math.random() * gifs.length)];
+    // Evitar que se repita el GIF actual
+    while (randomGif === mensaje) {
+      randomGif = gifs[Math.floor(Math.random() * gifs.length)];
+    }
+    setMensaje(randomGif);
+  };
 
   return (
     <div>
@@ -53,7 +64,8 @@ function App() {
                   <img 
                     src={mensaje} 
                     alt="gif sorpresa" 
-                    style={{ width: "120px", borderRadius: "20px" }}
+                    style={{ width: "150px", borderRadius: "20px", transition: "all 0.5s ease" }}
+                    className="shadow-lg"
                     loading="lazy"
                   />
                 ) : (
@@ -62,11 +74,11 @@ function App() {
               </p>
 
               <button
-                className="btn btn-warning shadow-lg rounded-pill px-4"
-                onClick={() => {
-                  const random = Math.floor(Math.random() * gifs.length);
-                  setMensaje(gifs[random]);
-                }}
+                className="btn btn-warning shadow-lg rounded-pill px-4 py-2 mb-4"
+                onClick={handleClickGif}
+                style={{ transition: "transform 0.2s", cursor: "pointer" }}
+                onMouseEnter={e => e.currentTarget.style.transform = "scale(1.1)"}
+                onMouseLeave={e => e.currentTarget.style.transform = "scale(1)"}
               >
                 💖 Apreta aquí
               </button>

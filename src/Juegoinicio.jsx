@@ -8,7 +8,7 @@ export default function JuegoInicio({ onGanar }) {
 
   // Al iniciar, generar emojis aleatorios
   useEffect(() => {
-    const lista = ["🍎", "🍌", "🍇", "🍉", "🍒", "🍍"];
+    const lista = ["🐒", "🐭", "🐴", "🌻", "🍱", "🍦"];
     // Tomamos 3 al azar
     const seleccionados = lista.sort(() => 0.5 - Math.random()).slice(0, 3);
     setEmojis(seleccionados);
@@ -27,12 +27,12 @@ export default function JuegoInicio({ onGanar }) {
   // Verificar respuesta
   function verificarRespuesta(opcion) {
     if (opcion === emojis[posicionCorrecta]) {
-      setMensaje("¡Correcto! 🎉");
+      setMensaje("Wenaaa!🥳");
       setTimeout(() => {
         onGanar(); // Pasa a la App principal
       }, 1500);
     } else {
-      setMensaje("❌ Intenta de nuevo...");
+      setMensaje("Yapo 🤡")
     }
   }
 
@@ -41,22 +41,22 @@ export default function JuegoInicio({ onGanar }) {
       <h1 className="text-2xl font-bold mb-6">🎮 Juego de Memoria</h1>
 
       {mostrarSecuencia ? (
-        <div className="text-6xl space-x-6">
+        <div className="h-screen flex items-center justify-center">
           {emojis.map((emoji, i) => (
             <span key={i}>{emoji}</span>
           ))}
         </div>
       ) : (
         <div>
-          <p className="mb-4 text-lg">
+          <p className="h-screen flex items-center justify-center">
             ¿Cuál emoji estaba en la posición {posicionCorrecta + 1}?
           </p>
-          <div className="flex gap-4 justify-center">
+          <div className="h-screen flex items-center justify-center">
             {emojis.map((emoji, i) => (
               <button
                 key={i}
                 onClick={() => verificarRespuesta(emoji)}
-                className="text-4xl p-4 border rounded-xl hover:bg-gray-200"
+                className="text-6xl p-3 border rounded-xl hover:bg-gray-600 hover:text-white transition-colors duration-300 shadow-lg"
               >
                 {emoji}
               </button>
