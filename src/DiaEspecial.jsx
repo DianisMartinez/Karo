@@ -1,17 +1,18 @@
 
 const fotos = [
-  { id: 10, src: "/foto10.jpg", texto: "Loquitas"},
-  { id: 11, src: "/foto11.jpg", texto: "Bonita vista" },
-  { id: 6, src: "/foto12.jpg", texto: "Esta es mi foto favorita ever 🥺" }, 
-  { id: 12, src: "/foto12.jpg", texto: "1111 🥺" }, 
+  { id: 32, src: "/foto32.jpg", texto: "Loquitas"},
+  { id: 33, src: "/foto33.jpg", texto: "Bonita vista" },
+  { id: 34, src: "/foto34.jpg", texto: "Esta es mi foto favorita ever 🥺" }, 
+  { id: 35, src: "/foto35.jpg", texto: "1111 🥺" }, 
 ];
 
 function DiaEspecial() {
     return (
       <div className="container py-5 text-center">
-      <h1>Pijamada real ⛄️🎄 </h1>
-    <div className="alert alert-primary mt-4 text-center">
-      Me acuerdo de este día que traté de llevar un vino para hacer algo que había probado en un evento, pero ¡me quedó horrible, jajaja! Nadie lo tomó. Tú llevaste arepita y quedó deliciosa, Ari llevó tamales, ¡todo bacán! Y Sofi con su presencia.
+      <h1 className="fw-bold  display-5 text-center">Sofi 😼 Karo 🐴 Dianis 🐒
+      </h1>
+    <div className=" mt-5 mb-4 fs-5 fw-normal px-3">
+     Nosostars siendo nosotras 
     </div>
       <div className="row">
         {fotos.map((foto) => (

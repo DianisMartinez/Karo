@@ -9,13 +9,10 @@ body {
 
 /* Imágenes con efecto hover */
 .img-hover {
-  transition: transform 0.3s, box-shadow 0.3s;
+  transition: transform 0.4s, box-shadow 0.3s;
   cursor: pointer;
 }
-.img-hover:hover {
-  transform: scale(1.05);
-  box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.2);
-}
+
 
 /* Imágenes dentro de .lead */
 .lead img {
@@ -29,34 +26,34 @@ body {
 .card {
   border: none;
   border-radius: 18px;
-  background: #fffef9;
+ background-color: #f4f9c0ee;
   box-shadow: 0 4px 10px rgba(0,0,0,0.1);
   transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 .card:hover {
   transform: translateY(-6px) rotate(-1deg);
-  box-shadow: 0 10px 20px rgba(0,0,0,0.2);
+  box-shadow: 0 10px 20px rgba(210, 218, 58, 0.2);
 }
 .card-img-top {
   width: 100%;
   height: 300px;
   object-fit: cover;
-  border-top-left-radius: 0.5rem;
-  border-top-right-radius: 0.5rem;
-  border-bottom: 4px solid #ffd633;
+  border-top-left-radius: 0.6rem;
+  border-top-right-radius: 0.6rem;
+  border-bottom: 6px solid #ffd633;
 }
 .card-text {
   font-weight: 500;
-  color: #444;
+  color: #474141ee;
 }
 
-/* Efecto floral 🌻 */
+
 .card-body::after {
-  content: "🌻";
+  content: "🐴";
   position: absolute;
   top: -10px;
-  right: -10px;
-  font-size: 1.8rem;
+
+  font-size: 1.7rem;
   opacity: 0;
   transition: opacity 0.3s ease;
 }
@@ -65,15 +62,8 @@ body {
 }
 
 /* Links */
-a {
-  color: #f5a623;
-  font-weight: bold;
-  text-decoration: none;
-}
-a:hover {
-  color: #d97a00;
-  text-decoration: underline wavy #ffd633;
-}
+
+
 
 /* Decorador en el iframe */
 .embed-responsive-item {
@@ -81,39 +71,13 @@ a:hover {
   border-radius: 18px;
   overflow: hidden;
 }
-.embed-responsive-item::after {
-  content: "🐴";
-  position: absolute;
-  bottom: 10px;
-  right: 10px;
-  font-size: 2rem;
-  opacity: 0;
-  transition: opacity 0.4s ease, transform 0.4s ease;
-  pointer-events: none;
-}
+
 .embed-responsive-item:hover::after {
   opacity: 1;
   transform: scale(1.2) rotate(-10deg);
 }
-/* Sección de videos con estilo consistente */
-.videos-section {
-  background: #fffef9;
-  border: 2px solid #ffd633;
-  border-radius: 18px;
-  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
-  padding: 40px;
-  transition: box-shadow 0.3s ease;
-}
 
-.videos-section:hover {
-  box-shadow: 0 8px 20px rgba(255, 214, 51, 0.3); /* brillo dorado */
-}
 
-.videos-title {
-  font-family: 'Poppins', sans-serif;
-  font-size: 2rem;
-  font-weight: 800;
-  color: #f5a623;
-  text-align: center;
-  margin-bottom: 2rem;
-}
+
+
+
