@@ -3,16 +3,18 @@ const fotos = [
   { id: 5, src: "/foto5.jpg", texto: "🥹" },
   { id: 6, src: "/foto6.jpg", texto: "Las sin fronteras LOL😝" },
   { id: 7, src: "/foto7.jpg", texto: "El vino que me salio de la  👎🏽 😶‍🌫️" },
-  { id: 8, src: "/foto8.jpg", texto: "Otra fotito linda 💕" },
+  { id: 8, src: "/foto8.jpg", texto: "Otra fotito linda Recien despertandose 💕" },
   { id: 9, src: "/foto9.jpg", texto: "Desayunito 🥐🍪☕️" },
-  { id: 10, src: "/foto10.jpg", texto: "🥹" },
+  { id: 33, src: "/foto33.jpg", texto: "Sofi y Karo rencontrandoce con karely" },
+  { id: 34, src: "/foto34.jpg", texto: "🫶🏽" },
+  { id: 35, src: "/foto35.jpg", texto: "🥹" },
 ];
 
 function DiaCafeteria() {
   return (
     <div className="container py-5 text-center">
       <h1>Sleep Over 2024 🎄❄️</h1>
-      <p>
+      <p className="container py-5 text-center">
       ✨ Una pijamada que disfruté muchísimo. Ese día conocí a Sofía y la pasamos increíble. Recuerdo que llevé un vino para preparar algo, aunque no resultó como esperaba, pero igual nos reímos mucho. Jugamos UNO, conversamos de todo y compartimos momentos únicos. Sofi me hablaba de piedras y de ciencia, algo que le apasionaba, mientras Karo me contaba sobre su familia. Yo las escuchaba y sentía lo especial y lo buenas que serian para mi ✨
       </p>
       <div className="row">

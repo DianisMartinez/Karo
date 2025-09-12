@@ -1,19 +1,20 @@
 
 const fotos = [
   { id: 32, src: "/foto32.jpg", texto: "Loquitas"},
-  { id: 33, src: "/foto33.jpg", texto: "Bonita vista" },
-  { id: 34, src: "/foto34.jpg", texto: "Esta es mi foto favorita ever 🥺" }, 
-  { id: 35, src: "/foto35.jpg", texto: "1111 🥺" }, 
+  { id: 32, src: "/foto32.jpg", texto: "Loquitas"},
+  { id: 32, src: "/foto32.jpg", texto: "Loquitas"},
+  { id: 32, src: "/foto32.jpg", texto: "Loquitas"},
+  { id: 32, src: "/foto32.jpg", texto: "Loquitas"},
+  
+ 
 ];
 
 function DiaEspecial() {
     return (
       <div className="container py-5 text-center">
-      <h1 className="fw-bold  display-5 text-center">Sofi 😼 Karo 🐴 Dianis 🐒
-      </h1>
-    <div className=" mt-5 mb-4 fs-5 fw-normal px-3">
-     Nosostars siendo nosotras 
-    </div>
+      <h1 className="fw-bold  display-5 text-center"> s + k + d </h1>
+    <div className="container py-5 text-center">
+     Nosostars siendo nosotras </div>
       <div className="row">
         {fotos.map((foto) => (
           <div key={foto.id} className="col-md-6 col-lg-4 mb-4">

@@ -27,6 +27,7 @@ const fotos = [
   { id: 29, src: "/foto29.jpg", texto: "Esta fue cuando la Sofía estaba cumpliendo años y después conocieron mi cozy place" }, 
   { id: 30, src: "/foto30.jpg", texto: "Fuimos a la feria, estábamos en Rueda riéndonos para no llorar y recordar que gastamos 60 dólares en un peluche todo picho 🫠. Pero la pasamos increíble, nos subimos al Freakout y al ascensor 10/10, comimos rico además 🎡🎢" }, 
   { id: 31, src: "/foto31.jpg", texto: "Encontramos oro 🇨🇴" }, 
+  { id: 42, src: "/foto42.jpg", texto: "Diciembre 2024" }, 
 ]
 function DiaCabritas() {
   return (

@@ -56,8 +56,8 @@ function App() {
         <Route
           path="/"
           element={
-            <div className="container py-5 text-center">
-              <h1 className="fw-bold mb-3 display-5">Karito en California</h1>
+            <div className="container py-4 text-center">
+              <h1 className="fw-bold mb-3 display-5">Karito</h1>
               
               <p className="lead">
                 {mensaje.startsWith("http") ? (
