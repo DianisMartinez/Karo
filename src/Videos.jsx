@@ -3,7 +3,7 @@ import MusicPlayer2 from "./MusicPlayer2";
 import "./V.css";
 
 const videos = [
-  { id: 1, src: "/video1.mp4", descripcion: "Un momento especial compartido juntos.", orientation: "vertical" },
+  { id: 1, src: "https://res.cloudinary.com/dwmw7ftnu/image/upload/v17258494786/D94CDFB9-E101-4FAA-B240-8BE702A5EF69_1_105_c_u6dhjl.jpg", descripcion: "Un momento especial compartido juntos.", orientation: "vertical" },
   { id: 2, src: "/video2.mp4", descripcion: "Otro gran recuerdo para no olvidar.", orientation: "vertical"  },
   { id: 4, src: "/video4.mp4", descripcion: "Otro gran recuerdo para no olvidar.", orientation: "vertical"  },
   { id: 5, src: "/video5.mp4", descripcion: "Otro gran recuerdo para no olvidar.", orientation: "vertical"  },
