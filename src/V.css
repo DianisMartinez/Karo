@@ -1,0 +1,159 @@
+/* 🌸 Fuente más suave y bonita */
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700&display=swap');
+
+body {
+  font-family: "Nunito", sans-serif;
+  background: linear-gradient(135deg, #fffdf5, #fffbea); /* degradado muy sutil */
+  color: #444;
+  margin: 0;
+  padding: 0;
+  line-height: 1.6;
+  overflow-x: hidden;
+}
+
+/* Animaciones globales */
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes glow {
+  0% { box-shadow: 0 0 0 rgba(202, 138, 4, 0.0); }
+  50% { box-shadow: 0 0 12px rgba(202, 138, 4, 0.25); }
+  100% { box-shadow: 0 0 0 rgba(202, 138, 4, 0.0); }
+}
+
+/* 🌟 Título principal */
+h1 {
+  font-size: 2.6rem;
+  color: #ca8a04; /* mostaza */
+  font-weight: 700;
+  text-align: center;
+  margin-bottom: 1rem;
+  letter-spacing: 1px;
+  text-shadow: 1px 1px 4px rgba(202, 138, 4, 0.15);
+  animation: fadeInUp 0.8s ease forwards;
+  transition: color 0.3s ease;
+}
+h1:hover {
+  color: #e0a800; /* dorado más vivo */
+}
+
+/* Animación de rebote al hacer clic */
+@keyframes pop {
+  0% { transform: scale(1); }
+  50% { transform: scale(1.05); }
+  100% { transform: scale(1); }
+}
+
+/* 💌 Mensaje */
+p.fs-5 {
+  background: #fef9c3;
+  border-radius: 24px;
+  padding: 1.8rem;
+  font-size: 1.1rem;
+  line-height: 1.7;
+  color: #333;
+  max-width: 900px;
+  margin: 0 auto 2rem auto;
+  box-shadow: 0 6px 16px rgba(202, 138, 4, 0.15);
+  text-align: center;
+  animation: fadeInUp 1s ease forwards;
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+p {
+  transition: transform 0.4s ease-in-out;
+  cursor: pointer;
+}
+
+p:hover {
+  transform: translateY(-8px); /* se levanta un poquito */
+}
+
+/* 📦 Tarjetas */
+.card {
+  border: none;
+  border-radius: 20px;
+  overflow: hidden;
+  background: #ffffff;
+  box-shadow: 0 4px 12px rgba(202, 138, 4, 0.12);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  animation: fadeInUp 1s ease forwards;
+  position: relative;
+}
+.card:hover {
+  transform: translateY(-8px) scale(1.02); /* 👈 movimiento al hacer hover */
+  box-shadow: 0 10px 22px rgba(202, 138, 4, 0.25);
+}
+
+/* ✨ Brillito dorado en hover */
+.card::after {
+  content: "✨";
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  opacity: 0;
+  font-size: 1.2rem;
+  transition: opacity 0.4s ease;
+}
+.card:hover::after {
+  opacity: 1;
+}
+
+/* 🎥 Videos */
+.card video {
+  background: #fffdf5;
+  border-radius: 16px;
+  transition: transform 0.4s ease;
+}
+.card video:hover {
+  transform: scale(1.02);
+}
+
+/* 📑 Textos de las tarjetas */
+.card-title {
+  font-size: 1.15rem;
+  color: #ca8a04;
+  margin-top: 0.8rem;
+  font-weight: 600;
+  text-align: center;
+  transition: color 0.3s ease;
+}
+.card-title:hover {
+  color: #e0a800; /* cambio de color en hover */
+}
+
+.card-text {
+  font-size: 0.95rem;
+  color: #555;
+  text-align: center;
+  margin-bottom: 1rem;
+  line-height: 1.5;
+}
+
+/* ✨ Botones lindos */
+button {
+  background: #fef9c3;
+  border: none;
+  border-radius: 9999px;
+  padding: 0.6rem 1.4rem;
+  font-size: 0.95rem;
+  color: #444;
+  font-weight: 600;
+  cursor: pointer;
+  box-shadow: 0 4px 10px rgba(202, 138, 4, 0.15);
+  transition: background 0.3s ease, transform 0.25s ease;
+  animation: fadeInUp 1.2s ease forwards;
+}
+button:hover {
+  background: #fde68a;
+  transform: translateY(-3px);
+  animation: glow 1.5s infinite ease-in-out;
+}
