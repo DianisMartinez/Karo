@@ -23,7 +23,7 @@ function AvatarModel() {
 }
 
 function AvatarRun({ onFinish }) {
-  const duration =10000; // 4 segundos de “carrera”
+  const duration =7000; // 4 segundos de “carrera”
 
   useEffect(() => {
     const timer = setTimeout(() => {
@@ -35,11 +35,12 @@ function AvatarRun({ onFinish }) {
   return (
     <div className="avatar-screen">
       <Canvas>
-        <ambientLight intensity={0.5} />
+        <ambientLight intensity={0.6} />
         <directionalLight position={[5, 5, 5]} />
         <AvatarModel />
       </Canvas>
     </div>
+    
   );
 }
 
