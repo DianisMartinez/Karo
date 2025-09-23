@@ -5,9 +5,9 @@ import DiaCafeteria from "./DiaCafeteria.jsx";
 import DiaEspecial from "./DiaEspecial.jsx";
 import DiaCabritas from "./DiaCabritas.jsx";
 import confetti from "canvas-confetti";
-
+import AvatarRun from "./AvatarRun.jsx"; // 👈 importamos
 function App() {
-
+  const [showMain ,setMain] = useState(false); // Estado para mostrar la página principal
   const [mensaje, setMensaje] = useState("Bienvenida Princess 💛 ");
 
   const fotos = [
@@ -36,7 +36,9 @@ function App() {
       scalar: 6                        // Escala (tamaño de los emojis/partículas)
     });
   };
-
+  if (!showMain) {
+    return <AvatarRun onFinish={() => setMain(true)} />; // Mostramos el avatar y al terminar mostramos la página principal
+  }
   
   
   return (

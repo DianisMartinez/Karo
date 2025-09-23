@@ -1,0 +1,90 @@
+.avatar-screen {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 200vw;
+  height: 200vh;
+  background: linear-gradient(135deg, #fbf183, #ffd700, #fbc531); /* degradado animado */
+  overflow: hidden;
+  box-shadow: inset 0 0 50px rgba(0,0,0,0.2);
+  animation: backgroundPulse 5s ease-in-out infinite alternate; /* pulso de color */
+}
+
+.avatar-screen canvas {
+  transition: transform 0.3s ease, filter 0.3s ease;
+  filter: drop-shadow(0 5px 25px rgba(0,0,0,0.4)) brightness(1.1);
+  animation: canvasGlow 3s ease-in-out infinite alternate;
+}
+
+/* Animación de pulso de fondo */
+@keyframes backgroundPulse {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+
+/* Animación de brillo en canvas */
+@keyframes canvasGlow {
+  0% { filter: drop-shadow(0 5px 15px rgba(0,0,0,0.3)) brightness(1); }
+  50% { filter: drop-shadow(0 10px 30px rgba(0,0,0,0.5)) brightness(1.2); }
+  100% { filter: drop-shadow(0 5px 15px rgba(0,0,0,0.3)) brightness(1); }
+}
+.avatar-screen {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 200vw;
+  height: 200vh;
+  background: linear-gradient(135deg, #fbf183, #ffd700, #fbc531);
+  overflow: hidden;
+  box-shadow: inset 0 0 80px rgba(0,0,0,0.3);
+  animation: backgroundPulse 7s ease-in-out infinite alternate;
+  position: relative;
+}
+
+/* partículas animadas */
+.avatar-screen::before {
+  content: "";
+  position: absolute;
+  width: 2px;
+  height: 2px;
+  background: white;
+  top: 0;
+  left: 0;
+  box-shadow:
+    100px 200px white,
+    300px 400px white,
+    500px 100px white,
+    700px 300px white,
+    900px 500px white,
+    1100px 200px white,
+    1300px 400px white,
+    1500px 100px white;
+  animation: starsMove 10s linear infinite;
+}
+
+/* animación de partículas */
+@keyframes starsMove {
+  0% { transform: translateY(0) translateX(0); }
+  100% { transform: translateY(-2000px) translateX(-500px); }
+}
+
+.avatar-screen canvas {
+  transition: transform 0.3s ease, filter 0.3s ease;
+  filter: drop-shadow(0 5px 35px rgba(0,0,0,0.5)) brightness(1.2) saturate(1.5);
+  animation: canvasGlow 3s ease-in-out infinite alternate;
+}
+
+/* Animación de pulso de fondo */
+@keyframes backgroundPulse {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+
+/* Animación de brillo en canvas */
+@keyframes canvasGlow {
+  0% { filter: drop-shadow(0 5px 25px rgba(0,0,0,0.4)) brightness(1.1) saturate(1); }
+  50% { filter: drop-shadow(0 10px 50px rgba(0,0,0,0.7)) brightness(1.4) saturate(1.8); }
+  100% { filter: drop-shadow(0 5px 25px rgba(0,0,0,0.4)) brightness(1.1) saturate(1); }
+}
