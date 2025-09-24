@@ -33,7 +33,7 @@ function MusicPlayer2() {
       <audio ref={audioRef} id="song" src="/song1.mp3" loop />
 
       {/* Botón con acción */}
-      <button onClick={togglePlay}>
+      <button className={`music-btn ${playing ? "playing" : ""}`} onClick={togglePlay}>
         <svg
           xmlns="http://www.w3.org/2000/svg"
           viewBox="0 0 36 36"

@@ -95,6 +95,7 @@ body {
   box-shadow: 0 6px 14px rgba(218, 177, 17, 0.3);
   transition: all 0.3s ease;
   overflow: hidden;
+  margin-bottom: 40px;
 }
 
 .music-btn:hover {

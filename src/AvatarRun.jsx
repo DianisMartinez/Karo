@@ -19,11 +19,11 @@ function AvatarModel() {
     }
   });
 
-  return <primitive ref={ref} object={scene} scale={2} position={[-6, 0, 0]} />;
+  return <primitive ref={ref} object={scene} scale={4} position={[-6, -4, 0]} />;
 }
 
 function AvatarRun({ onFinish }) {
-  const duration =7000; // 4 segundos de “carrera”
+  const duration =11000; // 4 segundos de “carrera”
 
   useEffect(() => {
     const timer = setTimeout(() => {
@@ -34,12 +34,12 @@ function AvatarRun({ onFinish }) {
 
   return (
     <div className="avatar-screen">
-      <Canvas>
-        <ambientLight intensity={0.6} />
-        <directionalLight position={[5, 5, 5]} />
-        <AvatarModel />
-      </Canvas>
-    </div>
+  <Canvas>
+    <ambientLight intensity={0.6} />
+    <directionalLight position={[5, 5, 5]} />
+    <AvatarModel />
+  </Canvas>
+</div>
     
   );
 }

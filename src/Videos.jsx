@@ -49,7 +49,7 @@ const videos = [
   { id: 14, src: "https://res.cloudinary.com/dwmw7ftnu/video/upload/v1725849478/IMG_0661_gte8yj.mp4",
   descripcion: "bb",
   orientation: "vertical" },
-  { id: 16, src: "https://res.cloudinary.com/dwmw7ftnu/video/upload/v1725849478/IMG_9206_jhpxwz.mp4",
+  { id: 16, src: "https://res.cloudinary.com/dwmw7ftnu/video/upload/IMG_9728_aj6oww.mp4",
      descripcion: "11",
      orientation: "vertical" },
 ];
