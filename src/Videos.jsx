@@ -103,8 +103,8 @@ function Videos() {
       </div>
       <div className="row">
         {videos.map((video, index) => (
-          <div key={video.id} className="col-md-6 col-lg-4 mb-4">
-            <div className="card shadow-sm rounded-4 overflow-hidden h-100">
+          <div key={video.id} className="col-md-6 col-lg-4 mb-4 d-flex">
+            <div className="card shadow-sm rounded-4 overflow-hidden h-100 ">
               <video
                 ref={(el) => (videoRefs.current[index] = el)}
                 className="w-100"
@@ -113,11 +113,11 @@ function Videos() {
                 muted
                 onMouseEnter={(e) => e.target.play()}
                 onMouseLeave={(e) => e.target.pause()}
-                style={
-                  video.orientation === "vertical"
-                    ? { height: "400px", width: "auto", margin: "0 auto" }
-                    : { height: "250px", width: "100%", objectFit: "cover" }
-                }
+             style={
+  video.orientation === "vertical"
+    ? { height: "400px", width: "100%", objectFit: "cover", display: "block" }
+    : { height: "400px", width: "100%", objectFit: "cover", display: "block" }
+}
               >
                 <source src={video.src} type="video/mp4" />
                 Tu navegador no soporta video.
