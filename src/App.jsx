@@ -8,7 +8,7 @@ import confetti from "canvas-confetti";
 import AvatarRun from "./AvatarRun.jsx"; // 👈 importamos
 function App() {
   const [showMain ,setMain] = useState(false); // Estado para mostrar la página principal
-  const [mensaje, setMensaje] = useState("Bienvenida Princess 💛 ");
+  const [mensaje] = useState("Bienvenida Princess 💛 ");
 
   const fotos = [
     { id: 1, src: "/foto1.webp", texto: "Pijamada Real", link: "/cafeteria" },
@@ -61,17 +61,19 @@ function App() {
           element={
             <div className="container py-4 text-center">
               <h1 className="fw-bold mb-3 display-5 text-center">{mensaje}</h1>
-              <div className="d-flex justify-content-center align-items-center my-4">
+              <div className="d-flex justify-content-center align-items-center my-4 py-4">
                 <button className="btn-surprise" onClick={lanzarEmojis}>
                   Dale punch 🥹🤍
                 </button>
               </div>
-              <p className="mt-4mb-4  fw-bold px-3 text-center">✨ Queriamos hacer algo diferente y unico  para ti, algo que guarde un pedacito de lo que hemos vivido juntas. Cada foto tiene su historia: risas que no se olvidan, grandes recuerdos y la suerte de haber compartido tanto contigo.
-              <br /><br/>
-              Nos emociona verte empezar esta nueva etapa en Colombia, y aunque nos dé un poco de nostalgia, sabemos que vas a brillar como siempre. Eres única, tienes toda una vida por delante, eres increíblemente inteligente y estamos demasiado orgullosas de ti, como siempre te lo decimos.✨
-             <br /><br/>
-               No importa dónde vayas, I’m always by your side. 
-              </p>
+    <p className="mt-4 mb-4 fs-5 fw-normal px-3">
+      Queriamos hacer algo diferente y único para ti, algo que guarde un pedacito de lo que hemos vivido juntas. 
+      Cada foto tiene su historia: risas que no se olvidan, grandes recuerdos y la suerte de haber compartido tanto contigo.
+      Nos emociona verte empezar esta nueva etapa en Colombia, y aunque nos dé un poco de nostalgia, sabemos que vas a brillar como siempre. 
+      Eres única, tienes toda una vida por delante, eres increíblemente inteligente y estamos demasiado orgullosas de ti, como siempre te lo decimos. 💛
+      <br></br>
+      No importa dónde vayas, I’m always by your side. 🤍
+    </p>
 
               {/* Galería de fotos */}
               <div className="row g-4">

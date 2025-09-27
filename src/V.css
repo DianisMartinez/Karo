@@ -1,6 +1,5 @@
 /* 🌸 Fuente más suave y bonita */
-@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Macondo+Swash+Caps&display=swap');
 body {
   font-family: "Nunito", sans-serif;
   background: linear-gradient(135deg, #fffdf5, #fffbea); /* degradado muy sutil */
@@ -56,7 +55,7 @@ h1:hover {
 p.fs-5 {
   background: #fef9c3;
   border-radius: 24px;
-  padding: 1.8rem;
+  padding: 1.9rem;
   font-size: 1.1rem;
   line-height: 1.7;
   color: #333;
@@ -107,28 +106,16 @@ p:hover {
   opacity: 1;
 }
 
-/* 🎥 Videos */
-.card video {
-  background: #fffdf5;
-  border-radius: 16px;
-  transition: transform 0.4s ease;
-}
+
 .card video:hover {
-  transform: scale(1.02);
+  transform: scale(1.03);
+  box-shadow: 0 8px 18px rgba(255, 181, 20, 0.63);
+
 }
 
 /* 📑 Textos de las tarjetas */
-.card-title {
-  font-size: 1.15rem;
-  color: #ca8a04;
-  margin-top: 0.8rem;
-  font-weight: 600;
-  text-align: center;
-  transition: color 0.3s ease;
-}
-.card-title:hover {
-  color: #e0a800; /* cambio de color en hover */
-}
+
+
 
 .card-text {
   font-size: 0.95rem;
@@ -136,6 +123,7 @@ p:hover {
   text-align: center;
   margin-bottom: 1rem;
   line-height: 1.5;
+  
 }
 
 /* ✨ Botones lindos */
@@ -156,4 +144,43 @@ button:hover {
   background: #fde68a;
   transform: translateY(-3px);
   animation: glow 1.5s infinite ease-in-out;
+}
+/* 🌈 Mejor diseño de las descripciones */
+.card-body {
+  background: linear-gradient(180deg, #fffdf5, #fffbea);
+  padding: 1.4rem;
+  border-top: 1px solid rgba(255, 179, 16, 0.645);
+  border-radius: 0 0 20px 20px;
+  text-align: center;
+  max-height: 200px; /* controla el tamaño */
+  overflow-y: auto; /* scroll si es muy largo */
+  animation: fadeInUp 1s ease forwards;
+
+}
+
+/* Scroll bonito */
+.card-body::-webkit-scrollbar {
+  width: 6px;
+}
+.card-body::-webkit-scrollbar-thumb {
+  background: rgba(202, 138, 4, 0.3);
+  border-radius: 10px;
+}
+
+/* Texto descripción */
+.card-text {
+  font-size: 0.95rem; /* mantenemos tu valor original */
+  color: #444;
+  line-height: 1.6;
+  margin: 0;
+  font-style: italic;
+  animation: fadeInUp 1.2s ease forwards;
+}
+
+/* Video más limpio */
+.card video {
+  width: 0%;
+  height: 520px; /* tamaño uniforme */
+  object-fit: cover;
+  border-radius: 16px 16px 0 0;
 }

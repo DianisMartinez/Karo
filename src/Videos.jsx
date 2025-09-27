@@ -6,20 +6,20 @@ const videos = [
   { 
     id: 1, 
     src: "https://res.cloudinary.com/dwmw7ftnu/video/upload/v1725849478/IMG_4259_eazkdj.mp4", 
-    descripcion: "a", 
-    orientation: "vertical" 
+    descripcion: "la primera vez que fuimos a esquiar juntas, en Tahoe. Nos reímos mucho porque ninguna sabía muy bien qué hacer, pero lo pasamos increíble. Me acuerdo que nos caímos un montón de veces, pero siempre nos ayudábamos a levantar y seguir adelante. Fue un día súper divertido y especial para mí, porque pude compartir esa experiencia contigo.", 
+
   },    
   { 
     id: 2, 
     src: "https://res.cloudinary.com/dwmw7ftnu/video/upload/v1725849478/IMG_9459_rcbcdj.mp4", 
     descripcion: "Agosto del 2025 fuimos a ver The Lumineers y un día increíble. La Sofi y tú pidieron un trago delicioso que compartimos entre las tres, cantamos juntas y nos reímos incluso con esa luz  que nos daba en la cara durante todo el concierto. Fue un momento especial que siempre recordaremos y para cerrar la noche, fuimos a cenar a In-N-Out bien tarde ✨", 
-    orientation: "vertical" 
+
   },
   { 
     id: 4, 
     src: "https://res.cloudinary.com/dwmw7ftnu/video/upload/v1725849478/IMG_3379_txbpar.mp4", 
     descripcion: "Agosto del 2025 fuimos a ver The Lumineers y un día increíble. La Sofi y tú pidieron un trago delicioso que compartimos entre las tres, cantamos juntas y nos reímos incluso con esa luz  que nos daba en la cara durante todo el concierto. Fue un momento especial que siempre recordaremos y para cerrar la noche, fuimos a cenar a In-N-Out bien tarde ✨", 
-    orientation: "vertical" 
+
   },
   { 
     id: 5, 
@@ -113,17 +113,12 @@ function Videos() {
                 muted
                 onMouseEnter={(e) => e.target.play()}
                 onMouseLeave={(e) => e.target.pause()}
-             style={
-  video.orientation === "vertical"
-    ? { height: "400px", width: "100%", objectFit: "cover", display: "block" }
-    : { height: "400px", width: "100%", objectFit: "cover", display: "block" }
-}
               >
                 <source src={video.src} type="video/mp4" />
                 Tu navegador no soporta video.
               </video>
-              <div className="card-body text-center">
-                <p className="card-text text-muted small">
+              <div className="card-body">
+                <p className="card-text">
                   {video.descripcion}
                 </p>
               </div>
