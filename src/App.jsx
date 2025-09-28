@@ -13,7 +13,7 @@ function App() {
   const fotos = [
     { id: 1, src: "/foto1.webp", texto: "Pijamada Real 🎄☃️🧸", link: "/cafeteria" },
     { id: 3, src: "/foto3.webp", texto: "Karito Nevada City 🪵🍃🌲", link: "/cabritas" },
-    {id: 2, src: "/foto2.webp", texto: "Las Californianas", link: "/especial" },
+    {id: 2, src: "/foto2.webp", texto: "Las Californianas 🇺🇸", link: "/especial" },
    
   ];
   const lanzarEmojis = () => {
@@ -62,11 +62,11 @@ function App() {
             <div className="container py-4 text-center">
               <h1 className="fw-bold mb-3 display-5 text-center">{mensaje}</h1>
               <div className="d-flex justify-content-center align-items-center my-4 py-4">
-                <button className="btn-surprise" onClick={lanzarEmojis}>
+                <button className="btn-surprise px-6 py-6" onClick={lanzarEmojis}>
                   Dale punch 🥹🤍
                 </button>
               </div>
-    <p className="mt-4 mb-4 fs-5 fw-normal px-3">
+              <p className="mb-4 fs-5 fw-normal px-3 py-0">
       Queriamos hacer algo diferente y único para ti, algo que guarde un pedacito de lo que hemos vivido juntas. 
       Cada foto tiene su historia: risas que no se olvidan, grandes recuerdos y la suerte de haber compartido tanto contigo.
       Nos emociona verte empezar esta nueva etapa en Colombia, y aunque nos dé un poco de nostalgia, sabemos que vas a brillar como siempre.
