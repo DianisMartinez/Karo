@@ -11,8 +11,8 @@ function App() {
   const [mensaje] = useState("Bienvenida Princess 💛 ");
 
   const fotos = [
-    { id: 1, src: "/foto1.webp", texto: "Pijamada Real", link: "/cafeteria" },
-    { id: 3, src: "/foto3.webp", texto: "Karito Nevada City", link: "/cabritas" },
+    { id: 1, src: "/foto1.webp", texto: "Pijamada Real 🎄☃️🧸", link: "/cafeteria" },
+    { id: 3, src: "/foto3.webp", texto: "Karito Nevada City 🪵🍃🌲", link: "/cabritas" },
     {id: 2, src: "/foto2.webp", texto: "Las Californianas", link: "/especial" },
    
   ];
@@ -46,7 +46,7 @@ function App() {
       {/* Navbar */}
       <nav className="navbar navbar-dark bg-warning shadow-sm">
         <div className="container-fluid d-flex justify-content-between">
-          <Link className="navbar-brand fw-bold" to="/"> Karito in CA</Link>
+          <Link className="navbar-brand fw-bold" to="/">Recuerdos con Karito</Link>
           <div>
             <Link className="btn btn-light mx-1 shadow-sm" to="/">Fotos</Link>
             <Link className="btn btn-light mx-1 shadow-sm" to="/videos">Videos</Link>
@@ -69,10 +69,10 @@ function App() {
     <p className="mt-4 mb-4 fs-5 fw-normal px-3">
       Queriamos hacer algo diferente y único para ti, algo que guarde un pedacito de lo que hemos vivido juntas. 
       Cada foto tiene su historia: risas que no se olvidan, grandes recuerdos y la suerte de haber compartido tanto contigo.
-      Nos emociona verte empezar esta nueva etapa en Colombia, y aunque nos dé un poco de nostalgia, sabemos que vas a brillar como siempre. 
-      Eres única, tienes toda una vida por delante, eres increíblemente inteligente y estamos demasiado orgullosas de ti, como siempre te lo decimos. 💛
+      Nos emociona verte empezar esta nueva etapa en Colombia, y aunque nos dé un poco de nostalgia, sabemos que vas a brillar como siempre.
       <br></br>
-      No importa dónde vayas, I’m always by your side. 🤍
+      Eres única, tienes toda una vida por delante, eres increíblemente inteligente y estamos demasiado orgullosas de ti, como siempre te lo decimos. 💛
+      No importa dónde vayas, I’m always by your side
     </p>
 
               {/* Galería de fotos */}

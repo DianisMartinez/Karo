@@ -36,24 +36,25 @@ const fotos = [
   { id: 69, src: "/foto69.webp", texto: "u" },
   { id: 70, src: "/foto70.webp", texto: "u" },
   { id: 71, src: "/foto71.webp", texto: "u" },
- 
 ];
 
 function DiaEspecial() {
     return (
       <div className="container py-5 text-center">
-      <h1 className="fw-bold  display-5 text-center"> Recuerdos con ustedes ⚡️🌈 </h1>
+      <h1 className="fw-bold  display-5 text-center">Recuerditos</h1>
       <p className="mt-4 mb-4 fs-5 fw-normal px-3">
-      Nosotras pasándola la raja, muy lindos recuerdos contigo y esperamos que te gusten tanto como a nosotras ✨ </p>
-    
+        Nosotras pasándola la raja, muy lindos recuerdos contigo y esperamos que te gusten tanto como a nosotras
+        <br></br>
+        No importa dónde estemos, lo que vivimos juntas queda guardado aca 💖
+      </p>
       <div className="row">
         {fotos.map((foto) => (
           <div key={foto.id} className="col-md-6 col-lg-4 mb-4">
             <div className="card shadow rounded">
               <img
                 src={foto.src}
-                alt={`Recuerdo especial ${foto.id}`}
-                className="card-img-top"
+                alt={`Recuerdo especial ${foto.texto}`}
+                className="card-img-top img-fluid"
                 style={{ height: "500px", objectFit: "cover" }}
                 loading="lazy"
               />

@@ -1,9 +1,9 @@
-@import url('https://path-a-AlanSans/alan-sans.css'); /* si existe */
+@import url('https://fonts.googleapis.com/css2?family=Macondo+Swash+Caps&display=swap');
 
 /* Fondo claro con un detalle amarillo pastel */
 body {
   background: linear-gradient(135deg, #fff6db, #fff6cc);
-  font-family: "Alan Sans", sans-serif;  color: #444;
+  font-family: "Nunito", sans-serif;
 }
 
 /* Imágenes con efecto hover */

@@ -6,25 +6,26 @@ const videos = [
   { 
     id: 1, 
     src: "https://res.cloudinary.com/dwmw7ftnu/video/upload/v1725849478/IMG_4259_eazkdj.mp4", 
-    descripcion: "la primera vez que fuimos a esquiar juntas, en Tahoe. Nos reímos mucho porque ninguna sabía muy bien qué hacer, pero lo pasamos increíble. Me acuerdo que nos caímos un montón de veces, pero siempre nos ayudábamos a levantar y seguir adelante. Fue un día súper divertido y especial para mí, porque pude compartir esa experiencia contigo.", 
+    descripcion: "La primera vez que fuimos a esquiar juntas, en Tahoe. Nos reímos mucho porque ninguna sabía muy bien qué hacer, pero lo pasamos increíble. Me acuerdo que nos caímos un montón de veces, pero siempre nos ayudábamos a levantar y seguir adelante. Fue un día súper divertido y especial para mí, porque pude compartir esa experiencia contigo.", 
 
   },    
   { 
     id: 2, 
     src: "https://res.cloudinary.com/dwmw7ftnu/video/upload/v1725849478/IMG_9459_rcbcdj.mp4", 
-    descripcion: "Agosto del 2025 fuimos a ver The Lumineers y un día increíble. La Sofi y tú pidieron un trago delicioso que compartimos entre las tres, cantamos juntas y nos reímos incluso con esa luz  que nos daba en la cara durante todo el concierto. Fue un momento especial que siempre recordaremos y para cerrar la noche, fuimos a cenar a In-N-Out bien tarde ✨", 
+    descripcion: "Agosto del 2025 fuimos a ver The Lumineers y un día increíble. La Sofi y tú pidieron un trago delicioso que compartimos entre las tres, cantamos juntas y nos reímos incluso con esa luz  que nos daba en la cara durante todo el concierto. Fue un momento especial que siempre recordaremos y para cerrar la noche, fuimos a cenar a In-N-Out bien tarde ", 
 
   },
   { 
     id: 4, 
     src: "https://res.cloudinary.com/dwmw7ftnu/video/upload/v1725849478/IMG_3379_txbpar.mp4", 
-    descripcion: "Agosto del 2025 fuimos a ver The Lumineers y un día increíble. La Sofi y tú pidieron un trago delicioso que compartimos entre las tres, cantamos juntas y nos reímos incluso con esa luz  que nos daba en la cara durante todo el concierto. Fue un momento especial que siempre recordaremos y para cerrar la noche, fuimos a cenar a In-N-Out bien tarde ✨", 
-
+    descripcion: "Nos dio un ataque de risa en el supermercado, las tres juntas haciendo el ridículo, super casual finjiendo cómo sería la boda de la Sofi... y ella tirando el brócoli a la mierda. Jajaja, fue todo muy chistoso",
   },
   { 
     id: 5, 
     src: "https://res.cloudinary.com/dwmw7ftnu/video/upload/v1725849478/IMG_0427_vsxwzf.mp4", 
-    descripcion: "Nos estábamos arreglando, esto fue un día después de la nieve.Webiando ,con música siempre que nos levantamos, arreglándonos para ir al BBQ con tu host family, y eso sería todo, ahhh.", 
+    descripcion: "Nos estábamos arreglando, esto fue un día después de haber ido la nieve. Webiando con música siempre que nos levantamos, arreglándonos para ir al BBQ con tu host family, y eso sería todo, ahhh."
+    
+    , 
     orientation: "vertical" 
   },
   { id: 7,
@@ -70,7 +71,7 @@ function Videos() {
           }
         });
       },
-      { threshold: 0.5, rootMargin: "200px" }
+      { threshold: 0.5, rootMargin: "400px" }
     );
 
     videoRefs.current.forEach((video) => {
@@ -91,9 +92,7 @@ function Videos() {
         Un pedacito de todos los recuerdos contigo, Karito. Elegimos esta
         canción porque cada momento contigo se sintió como un electric love🪐
         Gracias por mostrarnos que todavía hay personas buenas en este mundo,
-        <br />
-        por ser tan buena amiga y estar siempre que te necesitabamos
-        <br />
+        por ser tan buena amiga y estar siempre que te necesitabamos.
         Hoy te nos vas, pero tu amistad queda para siempre en nuestro corazón.
         <br />
         Buen viaje princess, te queremos mucho 🌹🦦
