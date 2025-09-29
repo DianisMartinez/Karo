@@ -1,13 +1,12 @@
 import React, { useEffect, useRef } from "react";
-import MusicPlayer2 from "./MusicPlayer2";
 import "./V.css";
 
 const videos = [
   { 
     id: 1, 
-    src: "https://res.cloudinary.com/dwmw7ftnu/video/upload/v1725849478/IMG_4259_eazkdj.mp4", 
-    descripcion: "La primera vez que fuimos a esquiar juntas, en Tahoe. Nos reímos mucho porque ninguna sabía muy bien qué hacer, pero lo pasamos increíble. Me acuerdo que nos caímos un montón de veces, pero siempre nos ayudábamos a levantar y seguir adelante. Fue un día súper divertido y especial para mí, porque pude compartir esa experiencia contigo.", 
-
+    src: "https://res.cloudinary.com/dwmw7ftnu/video/upload/IMG_2451_bpsaz9.mp4",
+    descripcion: "Este video del 4 de julio, donde los fuegos se reflejan en el cielo y tu disfrutas del momento, representa lo que somos: instantes que brillan y nunca se olvidan. ¡Hasta pronto, amiga! 🎆✨", 
+    title : "-Karely",
   },    
   { 
     id: 2, 
@@ -89,17 +88,14 @@ function Videos() {
     <div className="container py-5">
       <h1 className="mb-4 text-center fw-bold">Nuestros Videos</h1>
       <p className="mt-5 mb-4 fs-5 fw-normal px-3 text-center">
-        Un pedacito de todos los recuerdos contigo, Karito. Elegimos esta
-        canción porque cada momento contigo se sintió como un electric love🪐
+        Un pedacito de todos los recuerdos contigo, Karito
+        <br />
         Gracias por mostrarnos que todavía hay personas buenas en este mundo,
         por ser tan buena amiga y estar siempre que te necesitabamos.
         Hoy te nos vas, pero tu amistad queda para siempre en nuestro corazón.
         <br />
         Buen viaje princess, te queremos mucho 🌹🦦
       </p>
-      <div>
-        <MusicPlayer2 />
-      </div>
       <div className="row">
         {videos.map((video, index) => (
           <div key={video.id} className="col-md-6 col-lg-4 mb-4 d-flex">
@@ -119,6 +115,9 @@ function Videos() {
               <div className="card-body">
                 <p className="card-text">
                   {video.descripcion}
+                  <br />
+                  <br />
+                   {video.title && <strong>{video.title}</strong>}
                 </p>
               </div>
             </div>

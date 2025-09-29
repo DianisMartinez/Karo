@@ -13,7 +13,7 @@ function App() {
   const fotos = [
     { id: 1, src: "/foto1.webp", texto: "Pijamada Real 🎄☃️🧸", link: "/cafeteria" },
     { id: 3, src: "/foto3.webp", texto: "Karito Nevada City 🪵🍃🌲", link: "/cabritas" },
-    {id: 2, src: "/foto2.webp", texto: "Las Californianas 🇺🇸", link: "/especial" },
+   {id: 42, src: "/foto42.webp", texto: "Las Californianas 🇺🇸", link: "/especial" },
    
   ];
   const lanzarEmojis = () => {
@@ -33,7 +33,7 @@ function App() {
       origin: { y: 0.5},               // Punto de inicio en el eje Y (0 = arriba, 1 = abajo)
       gravity: 1,                       // Gravedad (0 = flotan, 1 = caen normal, >1 caen más rápido)
       ticks: 500,                       // Duración de las partículas (cuántos frames duran)
-      scalar: 6                        // Escala (tamaño de los emojis/partículas)
+      scalar: 5                        // Escala (tamaño de los emojis/partículas)
     });
   };
   if (!showMain) {
