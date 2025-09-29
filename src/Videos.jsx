@@ -1,5 +1,6 @@
 import React, { useEffect, useRef } from "react";
 import "./V.css";
+import MusicPlayer3 from "./MusicPlayer3";
 
 const videos = [
   { 
@@ -96,6 +97,7 @@ function Videos() {
         <br />
         Buen viaje princess, te queremos mucho 🌹🦦
       </p>
+      <MusicPlayer3/>
       <div className="row">
         {videos.map((video, index) => (
           <div key={video.id} className="col-md-6 col-lg-4 mb-4 d-flex">

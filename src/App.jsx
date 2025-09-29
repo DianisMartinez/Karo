@@ -12,8 +12,8 @@ function App() {
 
   const fotos = [
     { id: 1, src: "/foto1.webp", texto: "Pijamada Real 🎄☃️🧸", link: "/cafeteria" },
-    { id: 3, src: "/foto3.webp", texto: "Karito Nevada City 🪵🍃🌲", link: "/cabritas" },
-   {id: 42, src: "/foto42.webp", texto: "Las Californianas 🇺🇸", link: "/especial" },
+    { id: 3, src: "/foto3.webp", texto: "Karito in Nevada City 🪵🍃🌲", link: "/cabritas" },
+   {id: 42, src: "/foto42.webp", texto: "Las Californianas 🇺🇸", link: "/especial",orientation :"vertical"},
    
   ];
   const lanzarEmojis = () => {
