@@ -38,7 +38,7 @@ function MusicPlayer3() {
       <div className="d3warpper">
         <div className="cover">
           <button className="button" onClick={togglePlay}>
-            {playing ? "⏸" : "▶"}
+            {playing ? "⏸" : "㉿"}
           </button>
         </div>
       </div>

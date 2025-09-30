@@ -44,12 +44,13 @@ function App() {
   return (
     <div>
       {/* Navbar */}
-      <nav className="navbar navbar-dark bg-warning shadow-sm">
+      <nav className="navbar navbar-dark bg-warning shadow-sm bg-opacity-10">
         <div className="container-fluid d-flex justify-content-between">
-          <Link className="navbar-brand fw-bold" to="/">Recuerdos con Karito</Link>
+          <Link className="navbar-brand fw-bold text-secondary" to="/">Recuerdos con Karito</Link>
           <div>
-            <Link className="btn btn-light mx-1 shadow-sm" to="/">Fotos</Link>
-            <Link className="btn btn-light mx-1 shadow-sm" to="/videos">Videos</Link>
+            <Link className="btn  mx-2 shadow-sm text-secondary" to="/">Fotos</Link>
+   
+            <Link className="btn  mx-2 shadow-sm text-secondary" to="/videos">Videos</Link>
           </div>
         </div>
       </nav>
