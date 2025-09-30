@@ -47,7 +47,7 @@ function App() {
   return (
     <div>
       {/* Navbar */}
-      <nav className="navbar navbar-expand-lg navbar-dark bg-warning shadow-sm">
+      <nav className="navbar navbar-expand-lg shadow-sm">
   <div className="container-fluid">
     {/* Logo / Título */}
     <Link className="navbar-brand fw-bold text-dark" to="/">

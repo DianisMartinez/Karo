@@ -2,80 +2,105 @@
 
 /* Fondo claro con un detalle amarillo pastel */
 body {
-  background: linear-gradient(135deg, #ffffff, #f1d884);
-  font-family: "Nunito", sans-serif;
+  background: linear-gradient(135deg, #fffdf5, #fffbea); /* degradado muy sutil */
+ 
 }
-
-/* Imágenes con efecto hover */
 .img-hover {
+  /* Transición suave para transformaciones y sombras */
   transition: transform 0.4s, box-shadow 0.3s;
+  /* Cursor cambia a puntero para indicar interactividad */
   cursor: pointer;
 }
 
 
 /* Imágenes dentro de .lead */
 .lead img {
+  /* Transición para efecto de escala al pasar el mouse */
   transition: transform 0.3s ease-in-out;
 }
 .lead img:hover {
+  /* Escala la imagen ligeramente al hacer hover */
   transform: scale(1.1);
 }
 
 /* Cards */
 .card {
+  /* Sin borde para apariencia limpia */
   border: none;
-  border-radius: 18px;
-  background-color: #d8ca84f8;
+  /* Bordes redondeados para suavizar la tarjeta */
+  border-radius: 10px;
+  /* Transición para transformaciones y sombras */
   transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 .card:hover {
+  /* Eleva y rota la tarjeta al pasar el cursor */
   transform: translateY(-6px) rotate(-1deg);
-  box-shadow: 0 10px 20px rgba(224, 225, 190, 0.2);
-
+  /* Sombra sutil para dar profundidad */
+  box-shadow: 0 10px 20px rgba(254, 247, 212, 0.2);
 }
 .card-img-top {
+  /* Imagen ocupa todo el ancho de la tarjeta */
   width: 100%;
+  /* Altura fija para uniformidad */
   height: 600px;
+  /* Ajusta la imagen para cubrir sin distorsión */
   object-fit: cover;
-  border-top-left-radius: 0.6rem;
-  border-top-right-radius: 0.6rem;
-  border-bottom: 4px solid #dab111c9;
+  /* Bordes superiores redondeados */
+
   
 }
 .card-text {
+  /* Fuente específica para el texto de la tarjeta */
   font-family: "Alan Sans", sans-serif;
-  font-size: 0.95rem;
-  color: #555;
+  /* Tamaño de fuente ligeramente pequeño */
+  font-size: 0.98rem;
+  /* Color gris medio para texto */
+  color: #383630;
+  /* Centrado del texto */
   text-align: center;
+  /* Margen inferior para separación */
   margin-bottom: 1rem;
+  /* Altura de línea para mejor legibilidad */
   line-height: 1.5;
 }
 
+/* Icono decorativo en el cuerpo de la tarjeta */
 .card-body::after {
+  /* Contenido emoji de caballo */
   content: "🐴";
+  /* Posición absoluta para colocar en esquina */
   position: absolute;
+  /* Posición desde arriba */
   top: 0px;
- right: 10px;
+  /* Posición desde la derecha */
+  right: 10px;
+  /* Tamaño de fuente para el emoji */
   font-size: 1.7rem;
+  /* Inicialmente invisible */
   opacity: 0;
-  transition: opacity 0.3s ease;
+  /* Transición para la opacidad */
+  transition: opacity 0.7s ease;
 }
 .card:hover .card-body::after {
+  /* Muestra el emoji al hacer hover */
   opacity: 1;
 }
 
 /* Links */
 
 
-
 /* Decorador en el iframe */
 .embed-responsive-item {
+  /* Posicionamiento relativo para pseudo-elementos */
   position: relative;
+  /* Bordes redondeados */
   border-radius: 18px;
+  /* Oculta contenido que sobresalga */
   overflow: hidden;
 }
 
 .embed-responsive-item:hover::after {
+  /* Aumenta opacidad y transforma para efecto visual */
   opacity: 1;
   transform: scale(1.2) rotate(-10deg);
 }
@@ -84,76 +109,111 @@ body {
 
 /* 🎶 Botón de MusicPlayer2 */
 .music-btn {
+  /* Posición relativa para elementos internos */
   position: relative;
+  /* Usa flexbox para centrar contenido vertical y horizontalmente */
   display: inline-flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  /* Tamaño fijo del botón */
   width: 120px;
   height: 120px;
+  /* Sin borde */
   border: none;
+  /* Botón redondo */
   border-radius: 50%;
+  /* Cursor cambia a puntero */
   cursor: pointer;
+  /* Fondo con gradiente amarillo */
   background: linear-gradient(135deg, #ffde59, #fff6cc);
+  /* Sombra suave para profundidad */
   box-shadow: 0 6px 14px rgba(218, 177, 17, 0.3);
+  /* Transición para todos los cambios */
   transition: all 0.3s ease;
+  /* Oculta contenido que sobresalga */
   overflow: hidden;
+  /* Margen inferior para separación */
   margin-bottom: 40px;
 }
 
 .music-btn:hover {
+  /* Levanta y escala el botón al pasar el mouse */
   transform: translateY(-4px) scale(1.05);
+  /* Sombra más intensa al hacer hover */
   box-shadow: 0 10px 20px rgba(218, 177, 17, 0.5);
 }
 
 /* SVG dentro del botón */
 .music-btn svg {
+  /* Tamaño fijo del SVG */
   width: 60px;
   height: 60px;
+  /* Margen inferior para separar del texto */
   margin-bottom: 6px;
+  /* Sombra para dar profundidad al SVG */
   filter: drop-shadow(0 2px 4px rgba(0,0,0,0.2));
 }
 
 /* Texto "now!" y "play" */
 .music-btn .now {
+  /* Tamaño de fuente pequeño */
   font-size: 0.9rem;
+  /* Fuente semi-bold */
   font-weight: 600;
+  /* Color oscuro amarillento */
   color: #6b5d00;
+  /* Texto en mayúsculas */
   text-transform: uppercase;
+  /* Espaciado entre letras */
   letter-spacing: 1px;
 }
 
 .music-btn .play {
+  /* Tamaño de fuente estándar */
   font-size: 1rem;
+  /* Fuente en negrita */
   font-weight: bold;
+  /* Color amarillo oscuro */
   color: #b68c00;
+  /* Sombra de texto para brillo */
   text-shadow: 0px 1px 4px rgba(218, 177, 17, 0.4);
+  /* Margen superior pequeño */
   margin-top: 2px;
 }
 
 /* 🌟 Animación de brillo */
 .music-btn::after {
+  /* Contenido vacío para efecto visual */
   content: "";
+  /* Posición absoluta para cubrir el botón */
   position: absolute;
   top: -50%;
   left: -50%;
+  /* Tamaño mayor para animación */
   width: 200%;
   height: 200%;
+  /* Gradiente para efecto de brillo */
   background: linear-gradient(
     120deg,
     rgba(255, 255, 255, 0.2) 0%,
     rgba(255, 255, 255, 0.8) 50%,
     rgba(255, 255, 255, 0.2) 100%
   );
+  /* Rotación inicial */
   transform: rotate(25deg);
+  /* Animación infinita de brillo */
   animation: shine 3s infinite;
 }
 
+/* Animación para efecto de brillo */
 @keyframes shine {
   0% {
+    /* Comienza fuera a la izquierda */
     transform: translateX(-150%) rotate(25deg);
   }
   100% {
+    /* Termina fuera a la derecha */
     transform: translateX(150%) rotate(25deg);
   }
 }
@@ -161,47 +221,74 @@ body {
 
 /* From Uiverse.io by barisdogansutcu */ 
 button {
-  display: flex;                /* Usa Flexbox para organizar el contenido dentro del botón */
-  align-items: center;          /* Alinea el contenido en el eje vertical (centrado) */
-  justify-content: center;      /* Alinea el contenido en el eje horizontal (centrado) */              /* Espacio entre los elementos hijos (ej. ícono y texto) */
-  padding: 0 10px;              /* Espacio interno: arriba/abajo = 0, izquierda/derecha = 10px */
-  color: rgba(255, 255, 255, 0.898);                 /* Color del texto (blanco) */
-  cursor: pointer;              /* Cambia el cursor a una mano al pasar por encima */
-  letter-spacing: 1px;          /* Espacio extra entre las letras */
-  font-weight: 600;             /* Grosor del texto (semi-bold) */
-  font-size: 17px;              /* Tamaño de la fuente */
-  background-color: hsl(49, 82%, 75%); /* Fondo del botón en color HSL (amarillo pastel) */
-  border-radius: 50px;          /* Bordes redondeados (forma de pastilla/píldora) */
-  position: relative;           /* Necesario para colocar elementos absolutos dentro */
-  overflow: hidden;             /* Oculta lo que se salga del botón (útil para efectos) */
-  transition: all 0.5s ease;    /* Suaviza los cambios de estilo (hover, animaciones, etc.) */
+  /* Usa Flexbox para organizar el contenido dentro del botón */
+  display: flex;
+  /* Alinea el contenido en el eje vertical (centrado) */
+  align-items: center;
+  /* Alinea el contenido en el eje horizontal (centrado) */
+  justify-content: center;
+  /* Espacio interno: arriba/abajo = 0, izquierda/derecha = 10px */
+  padding: 0 10px;
+  /* Color del texto (blanco con opacidad) */
+  color: rgba(255, 255, 255, 0.898);
+  /* Cambia el cursor a una mano al pasar por encima */
+  cursor: pointer;
+  /* Espacio extra entre las letras */
+  letter-spacing: 1px;
+  /* Grosor del texto (semi-bold) */
+  font-weight: 600;
+  /* Tamaño de la fuente */
+  font-size: 17px;
+  /* Fondo del botón en color HSL (amarillo pastel) */
+  background-color: hsl(49, 82%, 75%);
+  /* Bordes redondeados (forma de pastilla/píldora) */
+  border-radius: 50px;
+  /* Necesario para colocar elementos absolutos dentro */
+  position: relative;
+  /* Oculta lo que se salga del botón (útil para efectos) */
+  overflow: hidden;
+  /* Suaviza los cambios de estilo (hover, animaciones, etc.) */
+  transition: all 0.5s ease;
 }
 
-
+/* Transición para los SVG dentro del botón */
 button svg {
   transition: all 0.5s ease;
+  /* Asegura que el SVG esté por encima de otros elementos */
   z-index: 2;
 }
 
+/* Transición para el texto con clase play */
 .play {
   transition: all 0.5s ease;
+  /* Retraso en la transición para efecto escalonado */
   transition-delay: 300ms;
 }
 
+/* Transformación del SVG al hacer hover */
 button:hover svg {
+  /* Escala y traslada el SVG */
   transform: scale(3) translate(50%);
 }
 
+/* Posicionamiento y transformación inicial del texto con clase now */
 .now {
+  /* Posición absoluta para moverlo fuera del botón */
   position: absolute;
   left: 0;
+  /* Traslada el texto fuera del área visible */
   transform: translateX(-100%);
+  /* Transición suave para transformaciones */
   transition: all 0.5s ease;
+  /* Asegura que el texto esté por encima */
   z-index: 2;
 }
 
+/* Transformación del texto now al hacer hover */
 button:hover .now {
+  /* Mueve el texto ligeramente dentro del botón */
   transform: translateX(10px);
+  /* Retraso en la transición para efecto escalonado */
   transition-delay: 300ms;
 }
 
@@ -211,58 +298,95 @@ button:hover .now {
 /* Nevada city botoomn */
 /* From Uiverse.io by MuhammadHasann */ 
 .toggle-cont {
+  /* Ancho fijo del contenedor */
   width: 100px;
+  /* Alto fijo del contenedor */
   height: 50px;
+  /* Bordes completamente redondeados para forma ovalada */
   border-radius: 9999px;
+  /* Margen vertical para separación */
   margin: 40px auto;
   margin-bottom: 40px;
 }
 
+/* Oculta el input de tipo toggle */
 .toggle-cont .toggle-input {
   display: none;
 }
 
+/* Estilo para la etiqueta que actúa como switch */
 .toggle-cont .toggle-label {
+  /* Cursor indica que es clickeable */
   cursor: pointer;
+  /* Posición relativa para elementos internos */
   position: relative;
+  /* Display inline-block para tamaño personalizado */
   display: inline-block;
+  /* Ocupa todo el ancho y alto del contenedor */
   width: 100%;
   height: 100%;
+  /* Fondo amarillo claro */
   background: #f1f0c8;
+  /* Bordes redondeados para switch */
   border-radius: 9999px;
+  /* Ajusta el tamaño del box model */
   box-sizing: content-box;
+  /* Sombra sutil para profundidad */
   box-shadow: 0px 0px 16px -8px #aca125;
 }
 
+/* Parte móvil del switch */
 .toggle-cont .toggle-label .cont-label-play {
+  /* Posición relativa para control interno */
   position: relative;
+  /* Ancho fijo para círculo */
   width: 50px;
+  /* Mantiene proporción cuadrada */
   aspect-ratio: 1 / 1;
+  /* Fondo azul */
   background: #54abd4;
+  /* Bordes completamente redondeados */
   border-radius: 9999px;
+  /* Transición suave para movimiento */
   transition: all 0.5s cubic-bezier(1, 0, 0, 1);
 }
 
+/* Estado cuando el toggle está activado */
 .toggle-cont .toggle-input:checked + .toggle-label .cont-label-play {
+  /* Fondo azul (igual que el original) */
   background: #54abd4;
+  /* Mueve el círculo hacia la derecha */
   transform: translateX(50px);
 }
 
+/* Icono de play dentro del toggle */
 .toggle-cont .toggle-label .label-play {
+  /* Posición absoluta centrada */
   position: absolute;
   top: 50%;
   left: 50%;
+  /* Centra el icono */
   transform: translate(-50%, -50%);
+  /* Display inline-block para tamaño */
   display: inline-block;
+  /* Ancho fijo para icono */
   width: 24px;
+  /* Mantiene proporción cuadrada */
   aspect-ratio: 1 / 1;
+  /* Fondo blanco */
   background: #fefefe;
+  /* Bordes ligeramente redondeados */
   border-radius: 4px;
+  /* Forma de triángulo para icono play */
   clip-path: polygon(25% 0, 75% 50%, 25% 100%, 25% 51%);
+  /* Transición suave para cambio de forma */
   transition: all 0.5s cubic-bezier(1, 0, 0, 1);
 }
 
+/* Cambios cuando el toggle está activado */
 .toggle-cont .toggle-input:checked + .toggle-label .label-play {
+  /* Ancho reducido */
   width: 20px;
+  /* Cambia la forma a un rectángulo */
   clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
 }
