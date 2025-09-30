@@ -47,8 +47,8 @@ function App() {
   return (
     <div>
       {/* Navbar */}
-      <nav className="navbar navbar-expand-lg shadow-sm">
-  <div className="container-fluid">
+      <nav className="navbar navbar-expand-lg navbar-light bg-light shadow-sm fixed-top">
+  <div className="container">
     {/* Logo / Título */}
     <Link className="navbar-brand fw-bold text-dark" to="/">
       Recuerdos con Karito
@@ -90,14 +90,14 @@ function App() {
         <Route
           path="/"
           element={
-            <div className="container py-4 text-center">
-              <h1 className="fw-bold mb-3 display-5 text-center">{mensaje}</h1>
+            <div className="container py-4 text-center" style={{ marginTop: "90px" }}>
+              <h1 className="fw-bold mb-3 display-5 text-center fs-3 fs-md-1">{mensaje}</h1>
               <div className="d-flex justify-content-center align-items-center my-4 py-4">
-                <button className="btn-surprise px-6 py-6" onClick={lanzarEmojis}>
+                <button className="btn-surprise px-4 py-3 rounded-pill shadow-sm" onClick={lanzarEmojis}>
                   Dale punch 🥹🤍
                 </button>
               </div>
-              <p className="mb-4 fs-5 fw-normal px-3 py-0">
+              <p className="mb-4 fs-6 fs-md-5 fw-normal px-3 py-0" style={{ lineHeight: "1.6" }}>
       Queriamos hacer algo diferente y único para ti, algo que guarde un pedacito de lo que hemos vivido juntas
       <br></br> 
       Cada foto tiene su historia: risas que no se olvidan, grandes recuerdos y la suerte de haber compartido tanto contigo.
@@ -111,14 +111,15 @@ function App() {
               {/* Galería de fotos */}
               <div className="row g-4">
                 {fotos.map((foto) => (
-                  <div key={foto.id} className="col-12 col-sm-6 col-md-4">
-                    <div className="card shadow-sm h-100 border-0 rounded-3 overflow-hidden">
+                  <div key={foto.id} className="col-12 col-sm-6 col-md-4 d-flex">
+                    <div className="card shadow-sm w-100 h-100 border-0 rounded-3 overflow-hidden">
                       <Link to={foto.link}>
                         <img
                           src={foto.src}
                           alt={`Foto: ${foto.texto}`}
                           loading="lazy"
-                          className="card-img-top img-hover"
+                          className="card-img-top img-hover img-fluid"
+                          style={{ objectFit: "cover", height: "300px " }}
                         />
                       </Link>
                       <div className="card-body">

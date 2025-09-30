@@ -2,7 +2,7 @@
 
 /* Fondo claro con un detalle amarillo pastel */
 body {
-  background: linear-gradient(135deg, #fffdf5, #fffbea); /* degradado muy sutil */
+  background: linear-gradient(135deg, #fffdf5, #dcd9c9); /* degradado muy sutil */
  
 }
 .img-hover {
