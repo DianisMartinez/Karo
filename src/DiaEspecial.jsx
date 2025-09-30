@@ -55,8 +55,9 @@ function DiaEspecial() {
       <div className="container py-5 text-center">
       <h1 className="fw-bold  display-5 text-center">Recuerditos</h1>
       <p className="mt-4 mb-4 fs-5 fw-normal px-3">
-      ✨ Nosotras pasándola la raja, guardamos recuerdos hermosos contigo y esperamos que te gusten tanto como a nosotras. Elegimos esta canción porque cada momento contigo se sintió como un electric love 🪐. Y no solo fue nuestra experiencia… esa canción refleja lo que causas en las personas: una energía única, una chispa que ilumina y hace que todo se sienta especial. ✨        <br></br>
-        No importa dónde estemos, lo que vivimos juntas queda guardado aca 💖
+       Nosotras pasándola la raja, guardamos recuerdos hermosos contigo y esperamos que te gusten tanto como a nosotras. Elegimos esta canción porque cada momento contigo se sintió como un electric love 🪐. Y no solo fue nuestra experiencia… esa canción refleja lo que causas en las personas: una energía única, una chispa que ilumina y hace que todo se sienta especial
+      <br></br>
+      No importa dónde estemos, lo que vivimos juntas queda guardado aca 💖
       </p>
       <div>
         <MusicPlayer2 />

@@ -1,11 +1,10 @@
 /* From Uiverse.io by chintu_2484 */ 
 .cover {
-    background-color: rgb(0, 0, 0);
     height: 64px;
     width: 75px;
     border-radius: 10px;
     transform: rotateX(13deg);
-    position: absolute;
+    position: relative;
     z-index: 1;
     display: flex;
     align-items: center;
@@ -17,21 +16,19 @@
     cursor: pointer;
     border: none;
     border-bottom: 2px solid white;
-    background-color: rgb(221, 221, 221);
-    box-shadow: 0px 4px 0px 0.2px rgb(116, 116, 116);
+    background-color: #e4dd51;
+    
     height: 60px;
     width: 70px;
-    border-radius: 8px;
+    border-radius: 6px;
     transform: rotateX(13deg);
     z-index: 2;
-    position: absolute;
+    position: relative;
     transition: 80ms;
-    color: rgb(0, 0, 0, 0.7);
-    font-size: 22px;
-    font-weight: 500;
+    font-size: 27px;
   }
   .d3warpper {
-    position: absolute;
+    position: relative;
     transform-style: preserve-3d;
     perspective: 100px;
     display: flex;
@@ -45,20 +42,20 @@
     transition: 80ms;
   }
   .music-btn {
-  position: relative;
-  display: inline-flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  width: 120px;
-  height: 120px;
-  border: none;
-  border-radius: 50%;
-  cursor: pointer;
-  background: linear-gradient(135deg, #ffde59, #fff6cc);
-  box-shadow: 0 6px 14px rgba(218, 177, 17, 0.3);
-  transition: all 0.3s ease;
-  overflow: hidden;
-  margin-bottom: 40px;
-  padding: 10px;
-}
+    position: relative;
+    display: inline-flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 120px;
+    height: 120px;
+    border: none;
+    border-radius: 50%;
+    cursor: pointer;
+    background: linear-gradient(135deg, #ffde59, #fff6cc);
+    box-shadow: 0 6px 14px rgba(218, 177, 17, 0.3);
+    transition: all 0.3s ease;
+    overflow: hidden;
+    margin: 40px auto; /* espacio arriba y abajo, centrado */
+    padding: 0; /* quitar el padding gigante */
+  }

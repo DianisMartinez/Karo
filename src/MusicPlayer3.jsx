@@ -30,7 +30,7 @@ function MusicPlayer3() {
   };
 
   return (
-    <div className="d-flex justify-content-center align-items-center">
+    <div className="toggle-cont">
       {/* Audio */}
       <audio ref={audioRef} id="song" src="/song3.mp3" loop preload="auto" />
 

@@ -88,7 +88,7 @@ function Videos() {
   return (
     <div className="container py-5">
       <h1 className="mb-4 text-center fw-bold">Nuestros Videos</h1>
-      <p className="mt-5 mb-4 fs-5 fw-normal px-3 text-center">
+      <p className="mt-4 mb-4 fs-5 fw-normal px-3">
         Un pedacito de todos los recuerdos contigo, Karito
         <br />
         Gracias por mostrarnos que todavía hay personas buenas en este mundo,

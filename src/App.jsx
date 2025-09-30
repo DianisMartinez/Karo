@@ -6,6 +6,9 @@ import DiaEspecial from "./DiaEspecial.jsx";
 import DiaCabritas from "./DiaCabritas.jsx";
 import confetti from "canvas-confetti";
 import AvatarRun from "./AvatarRun.jsx"; // 👈 importamos
+
+
+
 function App() {
   const [showMain ,setMain] = useState(false); // Estado para mostrar la página principal
   const [mensaje] = useState("Bienvenida Princess 💛 ");
@@ -44,16 +47,43 @@ function App() {
   return (
     <div>
       {/* Navbar */}
-      <nav className="navbar navbar-dark bg-warning shadow-sm bg-opacity-10">
-        <div className="container-fluid d-flex justify-content-between">
-          <Link className="navbar-brand fw-bold text-secondary" to="/">Recuerdos con Karito</Link>
-          <div>
-            <Link className="btn  mx-2 shadow-sm text-secondary" to="/">Fotos</Link>
-   
-            <Link className="btn  mx-2 shadow-sm text-secondary" to="/videos">Videos</Link>
-          </div>
-        </div>
-      </nav>
+      <nav className="navbar navbar-expand-lg navbar-dark bg-warning shadow-sm">
+  <div className="container-fluid">
+    {/* Logo / Título */}
+    <Link className="navbar-brand fw-bold text-dark" to="/">
+      Recuerdos con Karito
+    </Link>
+
+    {/* Botón colapsable en móvil */}
+    <button
+      className="navbar-toggler"
+      type="button"
+      data-bs-toggle="collapse"
+      data-bs-target="#navbarNav"
+      aria-controls="navbarNav"
+      aria-expanded="false"
+      aria-label="Toggle navigation"
+    >
+      <span className="navbar-toggler-icon"></span>
+    </button>
+
+    {/* Links */}
+    <div className="collapse navbar-collapse" id="navbarNav">
+      <ul className="navbar-nav ms-auto">
+        <li className="nav-item">
+          <Link className="nav-link text-dark fw-semibold" to="/">
+            Fotos
+          </Link>
+        </li>
+        <li className="nav-item">
+          <Link className="nav-link text-dark fw-semibold" to="/videos">
+            Videos
+          </Link>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
 
       <Routes>
         {/* Página principal */}
@@ -68,12 +98,14 @@ function App() {
                 </button>
               </div>
               <p className="mb-4 fs-5 fw-normal px-3 py-0">
-      Queriamos hacer algo diferente y único para ti, algo que guarde un pedacito de lo que hemos vivido juntas. 
+      Queriamos hacer algo diferente y único para ti, algo que guarde un pedacito de lo que hemos vivido juntas
+      <br></br> 
       Cada foto tiene su historia: risas que no se olvidan, grandes recuerdos y la suerte de haber compartido tanto contigo.
       Nos emociona verte empezar esta nueva etapa en Colombia, y aunque nos dé un poco de nostalgia, sabemos que vas a brillar como siempre.
       <br></br>
-      Eres única, tienes toda una vida por delante, eres increíblemente inteligente y estamos demasiado orgullosas de ti, como siempre te lo decimos. 💛
-      No importa dónde vayas, I’m always by your side
+      Eres única, tienes toda una vida por delante, eres increíblemente inteligente y estamos demasiado orgullosas de ti, como siempre te lo decimos
+      <br></br>
+      No importa dónde vayas, I’m always by your side 🫶🏽 🤍
     </p>
 
               {/* Galería de fotos */}
