@@ -86,25 +86,35 @@ function Videos() {
   }, []);
 
   return (
-    <div className="container py-5">
-      <h1 className="mb-4 text-center fw-bold">Nuestros Videos</h1>
+    <div
+      className="container py-5"
+      style={{
+        marginTop: "90px",
+        background: "linear-gradient(135deg, #fffbea, #f9e9af, #ffffff)",
+        borderRadius: "16px",
+        boxShadow: "0 4px 20px rgba(0,0,0,0.1)"
+      }}
+    >
+      <h1 className="fw-bold mb-3 display-5 text-center">Nuestros Videos</h1>
       <p className="mt-4 mb-4 fs-5 fw-normal px-3">
-        Un pedacito de todos los recuerdos contigo, Karito
+        ✨ Nuestros momentos en video ✨ <br />
+        Cada uno de estos videos guarda risas, aventuras y ocurrencias únicas contigo, Karito.  
+        Gracias por enseñarnos con tu amistad que aún existen personas maravillosas en este mundo.  
         <br />
-        Gracias por mostrarnos que todavía hay personas buenas en este mundo,
-        por ser tan buena amiga y estar siempre que te necesitabamos.
-        Hoy te nos vas, pero tu amistad queda para siempre en nuestro corazón.
+        Hoy emprendes un nuevo camino, pero cada recuerdo queda grabado en nuestro corazón.  
         <br />
-        Buen viaje princess, te queremos mucho 🌹🦦
+        Buen viaje, Princess. Te queremos mucho 🌹🦦
       </p>
-      <MusicPlayer3/>
+      <div className="d-flex justify-content-center my-4">
+        <MusicPlayer3 />
+      </div>
       <div className="row">
         {videos.map((video, index) => (
           <div key={video.id} className="col-md-6 col-lg-4 mb-4 d-flex">
             <div className="card shadow-sm rounded-4 overflow-hidden h-100 ">
               <video
                 ref={(el) => (videoRefs.current[index] = el)}
-                className="w-100"
+                className="w-100 rounded"
                 playsInline
                 preload="metadata"
                 muted

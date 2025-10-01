@@ -1,6 +1,7 @@
 import { useState, useEffect, useRef } from "react";
 import "./bottom.css";
 
+
 function MusicPlayer3() {
   const [playing, setPlaying] = useState(false);
   const audioRef = useRef(null);
@@ -38,7 +39,7 @@ function MusicPlayer3() {
       <div className="d3warpper">
         <div className="cover">
           <button className="button" onClick={togglePlay}>
-            {playing ? "⏸" : "㉿"}
+            {playing ? "⏸" : "K"}
           </button>
         </div>
       </div>

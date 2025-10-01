@@ -27,7 +27,15 @@ const fotos = [
 ]
 function DiaCabritas() {
   return (
-    <div className="container py-5 text-center">
+    <div
+      className="container py-5 text-center"
+      style={{
+        marginTop: "90px",
+        background: "linear-gradient(135deg, #fffbea, #f9e9af, #ffffff)",
+        borderRadius: "16px",
+        boxShadow: "0 4px 20px rgba(0,0,0,0.1)"
+      }}
+    >
       <a
         href="https://maps.app.goo.gl/6qTSUCfZftktUmmk6"
         rel="noopener noreferrer"
@@ -36,12 +44,15 @@ function DiaCabritas() {
        <h1 className="fw-bold mb-3 display-5 text-center">Nevada City</h1>
       </a>
 <p className="mt-4 mb-4 fs-5 fw-normal px-3">
-  Un poquito de lo que viviste en Nevada City con nosotras...
-  No puedo creer que viviste aquí y disfrutaste de todo,me alegro mucho de haber tenido tu compañía, me encanta lo feliz que te veías estando aquí. Todas las risas que compartimos, los lugares que conocimos y esos momentos tontos que nos volviamos re loquitas
-  <br></br>
-  Dale punch al botón 🥹🤍
+  Un pedacito de lo que vivimos juntas en Nevada City ✨  
+  No puedo creer que hayas pasado este tiempo aquí y disfrutado tanto. Me alegra mucho haber compartido tu compañía, me encantaba verte tan feliz.  
+  Todas esas risas, los lugares que descubrimos y esos momentos tontos que nos volvían loquitas quedarán para siempre 💛  
+  <br />  
+  Ahora sí… ¡dale punch al botón! 🥹🤍
 </p>
-      <MusicPlayer />
+      <div className="d-flex justify-content-center my-4">
+        <MusicPlayer />
+      </div>
       <div className="row">
         {fotos.map((foto) => (
           <div key={foto.id} className="col-md-6 col-lg-4 mb-4">

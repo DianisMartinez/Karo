@@ -52,14 +52,26 @@ const fotos = [
 
 function DiaEspecial() {
     return (
-      <div className="container py-5 text-center">
-      <h1 className="fw-bold  display-5 text-center">Recuerditos</h1>
+      <div
+        className="container py-5 text-center"
+        style={{
+          marginTop: "90px",
+          background: "linear-gradient(135deg, #fffbea, #f9e9af, #ffffff)",
+          borderRadius: "16px",
+          boxShadow: "0 4px 20px rgba(0,0,0,0.1)"
+        }}
+      >
+      <h1 className="fw-bold mb-3 display-5 text-center">Recuerditos</h1>
       <p className="mt-4 mb-4 fs-5 fw-normal px-3">
-       Nosotras pasándola la raja, guardamos recuerdos hermosos contigo y esperamos que te gusten tanto como a nosotras. Elegimos esta canción porque cada momento contigo se sintió como un electric love 🪐. Y no solo fue nuestra experiencia… esa canción refleja lo que causas en las personas: una energía única, una chispa que ilumina y hace que todo se sienta especial
-      <br></br>
-      No importa dónde estemos, lo que vivimos juntas queda guardado aca 💖
+       ✨ Nosotras pasándola increíble ✨ <br />
+       Guardamos recuerdos hermosos contigo y esperamos que te gusten tanto como a nosotras.  
+       Elegimos esta canción porque cada momento contigo se sintió como un <em>electric love</em> 🪐.  
+       Y no solo fue nuestra experiencia… esa canción refleja lo que causas en las personas:  
+       una energía única, una chispa que ilumina y hace que todo se sienta especial.  
+       <br />  
+       No importa dónde estemos, lo que vivimos juntas queda guardado acá 💖
       </p>
-      <div>
+      <div className="d-flex justify-content-center my-4">
         <MusicPlayer2 />
       </div>
       <div className="row">
@@ -70,7 +82,7 @@ function DiaEspecial() {
                 src={foto.src}
                 alt={`Recuerdo especial ${foto.descripcion}`}
                 className="card-img-top img-fluid"
-                style={{ height: "500px", objectFit: "cover" }}
+                style={{ height: "500px", objectFit: "cover", borderRadius: "12px" }}
                 loading="lazy"
               />
               <div className="card-body p-2 d-flex justify-content-center align-items-center">
