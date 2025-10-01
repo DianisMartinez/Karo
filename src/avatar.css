@@ -7,17 +7,53 @@
   height: 100vh;
   background: url('/public/wall.png') no-repeat center center/cover;
   display: flex;
-  display: flex;
   align-items: center;
   justify-content: center;
   overflow: hidden;
-
+  opacity: 1;
+  transition: opacity 1s ease;
 }
 
+.avatar-screen.fade-out {
+  opacity: 0;
+  pointer-events: none;
+}
+
+/* Canvas ocupa todo */
 /* Canvas ocupa todo */
 .avatar-screen canvas {
   width: 100% !important;
   height: 100% !important;
+}
+
+/* Estrellitas animadas de fondo */
+.avatar-screen::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 200%;
+  height: 200%;
+  background: radial-gradient(white 1px, transparent 1px);
+  background-size: 50px 50px;
+  animation: moveStars 60s linear infinite;
+  opacity: 0.3;
+  z-index: 0;
+}
+
+@keyframes moveStars {
+  from {
+    transform: translate(0, 0);
+  }
+  to {
+    transform: translate(-50px, -50px);
+  }
+}
+
+/* Aseguramos que el canvas quede por encima de las estrellitas */
+.avatar-screen canvas {
+  position: relative;
+  z-index: 1;
 }
 
 /* Distinct colors for each firework with multiple particles */

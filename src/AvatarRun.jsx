@@ -4,7 +4,7 @@ import { useGLTF } from "@react-three/drei";
 import "./avatar.css";
 
 function AvatarModel() {
-  const { scene, animations } = useGLTF(
+  const { scene } = useGLTF(
     "https://models.readyplayer.me/68d1f3afb89f96000dad1d5d.glb"
   );
   const ref = useRef();
@@ -23,7 +23,7 @@ function AvatarModel() {
 }
 
 function AvatarRun({ onFinish }) {
-  const duration =11000; // 4 segundos de “carrera”
+  const duration = 11000; // 11 segundos de “carrera”
 
   useEffect(() => {
     const timer = setTimeout(() => {
@@ -34,13 +34,12 @@ function AvatarRun({ onFinish }) {
 
   return (
     <div className="avatar-screen">
-  <Canvas>
-    <ambientLight intensity={0.6} />
-    <directionalLight position={[5, 5, 5]} />
-    <AvatarModel />
-  </Canvas>
-</div>
-    
+      <Canvas>
+        <ambientLight intensity={0.8} />
+        <directionalLight position={[5, 5, 5]} intensity={1.2} />
+        <AvatarModel />
+      </Canvas>
+    </div>
   );
 }
 
