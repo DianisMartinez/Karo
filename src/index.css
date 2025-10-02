@@ -46,6 +46,7 @@ body {
   /* Ajusta la imagen para cubrir sin distorsión */
   object-fit: cover;
   /* Bordes superiores redondeados */
+  white-space: normal !important;
 
   
 }
@@ -62,6 +63,9 @@ body {
   margin-bottom: 1rem;
   /* Altura de línea para mejor legibilidad */
   line-height: 1.5;
+  white-space: normal !important;
+  
+
 }
 
 /* Icono decorativo en el cuerpo de la tarjeta */

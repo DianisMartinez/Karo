@@ -2,6 +2,7 @@ import React, { useEffect, useRef } from "react";
 import "./V.css";
 import MusicPlayer3 from "./MusicPlayer3";
 
+
 const videos = [
   { 
     id: 1, 
@@ -36,24 +37,42 @@ const videos = [
   { id: 9, src: "https://res.cloudinary.com/dwmw7ftnu/video/upload/v1725849478/PMM8F-7V356J_hykcip.mp4",
     descripcion: "Las dos loquitas que no podían separarse: tú viviendo en un extremo y yo en el otro, pero siempre buscando la forma de vernos y pasarla bien. Nos juntamos a ver Lilo & Stitch, a comer muchas cabritas y también a llorar por la plata perdida en las alitas de pollo. A veces somos muy demás con la comida 🥲",
     orientation: "vertical" },
+  
   { id: 10, src: "https://res.cloudinary.com/dwmw7ftnu/video/upload/v1725849478/IMG_8488_cbnoxj.mp4",
     descripcion: "Tú mostrándome el columpio que había en tu casa, intentando explicarme cómo se subía, pero yo muerta de risa porque no me convencías nada 😂. Al final se entiende por qué me daba miedo subirme, jajaja.",
     orientation: "vertical" },
+  
   { id: 11, src: "https://res.cloudinary.com/dwmw7ftnu/video/upload/v1725849478/IMG_4238_eyrsko.mp4", 
   descripcion: "Nos dimos un lujito y visitamos Castello di Amorosa en Napa, estaba hermoso y nos sentimos como princesas ese día, jaja. Degustamos muchos vinos y además compramos uno que habías pedido tú, estaba riquísimo, así que decidimos llevarlo para tomarlo en el Hotel. Recorrrimos todo el castillo y nos tomamos muchísimas fotos. Fue un día súper divertido junto a ti y la Sofi",
   orientation: "vertical" },
+
   { id: 12, src: "https://res.cloudinary.com/dwmw7ftnu/video/upload/v1725849478/cf9ca9a916684875aa3ae51f7b00515b_s08ets.mp4",
   descripcion: "Después de la pijamada real llegó la despedida. El desayuno estuvo brutal, de esos que despues da cagadera. Pero ya después cada una se fue para su casa… y obvio, nos despedimos con abrazos, risas y puras weas como siempre jajaja , adjunto evidencia", 
   orientation: "vertical" },
+
   { id: 13, src: "https://res.cloudinary.com/dwmw7ftnu/video/upload/v1725849478/IMG_5013_xws8cf.mp4",
    descripcion: "Año Nuevo 2025, en la pista de baile con “Pépas” a todo volumen, nosotras cantando como si no hubiera mañana . Esa noche quedamos en la historia, porque cada vez que digo algo de mis amigas dicen: “¡ahhh, las de la fiesta!” y yo 🌝", 
    orientation: "vertical" },
+
   { id: 14, src: "https://res.cloudinary.com/dwmw7ftnu/video/upload/v1725849478/IMG_0661_gte8yj.mp4",
   descripcion: "Esto fue en la casa de los abuelos. Habíamos ido a comer y a estar con los niños un rato, pero al final las que terminamos jugando fuimos nosotras, jaja. Comiendo hasta no poder más, pero felices. Tú patinando y yo en el scooter",
   orientation: "vertical" },
+
   { id: 16, src: "https://res.cloudinary.com/dwmw7ftnu/video/upload/IMG_9728_aj6oww.mp4",
      descripcion: "Me reí tanto con este video que dije tengo que ponerlo. Estábamos en Scott Flat Lake y nos tocó bajar y subir una montaña para llegar. Compramos Panda Express y estuvimos webiando mucho en el agua, hasta leímos. Cuando ya estábamos por irnos, nos vimos los outfits y no podíamos dejar de reírnos, ¡meras evangelicas! Jajaja",
      orientation: "vertical" },
+
+  { id: 16, src: "https://res.cloudinary.com/dwmw7ftnu/video/upload/IMG_9728_aj6oww.mp4",
+      descripcion: "Me reí tanto con este video que dije tengo que ponerlo. Estábamos en Scott Flat Lake y nos tocó bajar y subir una montaña para llegar. Compramos Panda Express y estuvimos webiando mucho en el agua, hasta leímos. Cuando ya estábamos por irnos, nos vimos los outfits y no podíamos dejar de reírnos, ¡meras evangelicas! Jajaja",
+      orientation: "vertical" },
+      
+  { id: 16, src: "https://res.cloudinary.com/dwmw7ftnu/video/upload/IMG_9057_nqc8zv.mp4",
+        descripcion: "Me reí tanto con este video que dije tengo que ponerlo. Estábamos en Scott Flat Lake y nos tocó bajar y subir una montaña para llegar. Compramos Panda Express y estuvimos webiando mucho en el agua, hasta leímos. Cuando ya estábamos por irnos, nos vimos los outfits y no podíamos dejar de reírnos, ¡meras evangelicas! Jajaja",
+        orientation: "vertical" },
+
+  { id: 16, src: "https://res.cloudinary.com/dwmw7ftnu/video/upload/IMG_3330_mj7stq.mp4",
+          descripcion: "Me reí tanto con este video que dije tengo que ponerlo. Estábamos en Scott Flat Lake y nos tocó bajar y subir una montaña para llegar. Compramos Panda Express y estuvimos webiando mucho en el agua, hasta leímos. Cuando ya estábamos por irnos, nos vimos los outfits y no podíamos dejar de reírnos, ¡meras evangelicas! Jajaja",
+          orientation: "vertical" },
 ];
 
 function Videos() {
