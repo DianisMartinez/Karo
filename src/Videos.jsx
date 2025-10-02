@@ -67,11 +67,11 @@ const videos = [
       orientation: "vertical" },
       
   { id: 16, src: "https://res.cloudinary.com/dwmw7ftnu/video/upload/IMG_9057_nqc8zv.mp4",
-        descripcion: "Me reí tanto con este video que dije tengo que ponerlo. Estábamos en Scott Flat Lake y nos tocó bajar y subir una montaña para llegar. Compramos Panda Express y estuvimos webiando mucho en el agua, hasta leímos. Cuando ya estábamos por irnos, nos vimos los outfits y no podíamos dejar de reírnos, ¡meras evangelicas! Jajaja",
+        descripcion: "Tahoe East Shore Trail, un día increíble con una vista hermosaa,aproximamente 8 millas en bicicleta y 2.6 millas en Monkey Rock Trailhead...unos de los mejores días que pasé contigo,",
         orientation: "vertical" },
 
   { id: 16, src: "https://res.cloudinary.com/dwmw7ftnu/video/upload/IMG_3330_mj7stq.mp4",
-          descripcion: "Me reí tanto con este video que dije tengo que ponerlo. Estábamos en Scott Flat Lake y nos tocó bajar y subir una montaña para llegar. Compramos Panda Express y estuvimos webiando mucho en el agua, hasta leímos. Cuando ya estábamos por irnos, nos vimos los outfits y no podíamos dejar de reírnos, ¡meras evangelicas! Jajaja",
+          descripcion: "extranare tu risa conagisas y todas esas pijamadas realese tus abrazos tu compañia y tu amistad que es lo mas bonito que me llevo de esta experiencia gracias por ser mi amiga y por todo lo que me enseñaste te quiero mucho karito",
           orientation: "vertical" },
 ];
 
@@ -130,7 +130,7 @@ function Videos() {
       <div className="row">
         {videos.map((video, index) => (
           <div key={video.id} className="col-md-6 col-lg-4 mb-4 d-flex">
-            <div className="card shadow-sm rounded-4 overflow-hidden h-100 ">
+            <div className="card shadow-sm rounded-4">
               <video
                 ref={(el) => (videoRefs.current[index] = el)}
                 className="w-100 rounded"

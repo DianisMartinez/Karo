@@ -65,7 +65,14 @@ body {
   line-height: 1.5;
   white-space: normal !important;
   
+  overflow-wrap: break-word; 
+  word-break: break-word;    
+  max-height: none !important;
+}
 
+.card-body {
+  overflow: visible !important;
+  height: auto !important;
 }
 
 /* Icono decorativo en el cuerpo de la tarjeta */
