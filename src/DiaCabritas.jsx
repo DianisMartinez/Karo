@@ -44,9 +44,10 @@ function DiaCabritas() {
        <h1 className="fw-bold mb-3 display-5 text-center">Nevada City</h1>
       </a>
 <p className="mt-4 mb-4 fs-5 fw-normal px-3">
-  Un pedacito de lo que vivimos juntas en Nevada City ✨  
-  No puedo creer que hayas pasado este tiempo aquí y disfrutado tanto. Me alegra mucho haber compartido tu compañía, me encantaba verte tan feliz.  
-  Todas esas risas, los lugares que descubrimos y esos momentos tontos que nos volvían loquitas quedarán para siempre 💛  
+  Un pedacito de lo que vivimos juntas en Nevada City 
+  <br />
+  No puedo creer que hayas pasado este tiempo aquí y disfrutado tanto. Me alegra mucho haber compartido tu compañía, me encanto verte tan feliz.  
+  Todas esas risas, los lugares que descubrimos y esos momentos que nos volvíamos loquitas quedarán para siempre 💛  
   <br />  
   Ahora sí… ¡dale punch al botón! 🥹🤍
 </p>

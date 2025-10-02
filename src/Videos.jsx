@@ -71,7 +71,7 @@ const videos = [
         orientation: "vertical" },
 
   { id: 16, src: "https://res.cloudinary.com/dwmw7ftnu/video/upload/IMG_3330_mj7stq.mp4",
-          descripcion: "extranare tu risa conagisas y todas esas pijamadas realese tus abrazos tu compañia y tu amistad que es lo mas bonito que me llevo de esta experiencia gracias por ser mi amiga y por todo lo que me enseñaste te quiero mucho karito",
+          descripcion: 'Extrañaré tu risa contagiosa, todas esas pijamadas reales, tus abrazos, tu compañía y tu amistad, que es lo más bonito que me llevo de esta experiencia. Gracias por ser mi amiga y por todo lo que me enseñaste. Te quiero mucho, Karito.',
           orientation: "vertical" },
 ];
 
