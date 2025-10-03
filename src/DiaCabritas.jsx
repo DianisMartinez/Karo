@@ -2,7 +2,7 @@ import MusicPlayer from "./MusicPlayer.jsx";
 
 const fotos = [
   
-{ id: 11, src: "/foto11.webp", texto: "Mi host family hizo una comida para todas nosotras y terminamos el día viendo el atardecer con las chiquillas. Al final me caí por las escaleras y la única que lo vio fue Karo, típico 🤣" },
+{ id: 11, src: "/foto11.webp", texto: "Mi host family hizo una comida para todas nosotras y terminamos el día viendo el atardecer con las chiquillas. Al final me caí por las escaleras y la única que lo vio fuiste tu, típico 🤣" },
 { id: 13, src: "/foto13.webp", texto: "Karito y yo en Downtown Nevada City, Karely nos sacó esa foto, y no entiendo por qué yo colocaba esas cara jajaja, Al principio era toda tímida, nomás te hacía reír… y ahora quién me saca de encima, ahhh 😅"},
 { id: 14, src: "/foto14.webp", texto: "Organizamos una fiesta sorpresa para Sofi. Kareli trajo el pastel, Sofi y tú condujeron caleta, todas compartimos , me acuerdo de esos shots de aguardiente en la cocina y yo pensando que eras alcohólica, porque cada vez que nos veíamos tú estabas con tu aguardiente repartiéndole a todas 🤣" },
 { id: 12, src: "/foto12.webp", texto: "Yuba River siempre será nuestro lugar. No sé cuántas veces fuimos este verano, pero lo pasamos la raja: nadamos, comimos y nos reímos mucho hablando de toda la gente que estaba desnuda jajaja." },{ id: 15, src: "/foto15.webp", texto: "En New Year’s Eve, Sofi y Karito despediendo el 2024 siendo loquitas toda la noche 😂" },
@@ -16,8 +16,8 @@ const fotos = [
 { id: 24, src: "/foto24.webp", texto: "La Sofi vino a visitarnos, me acuerdo que vimos *El Conjuro* y comimos cabritas 🍿. El chismoso de Gleenn pensó que era alguien más que había llegado a la casa por el auto de Sofi 🤣" },
 { id: 25, src: "/foto25.webp", texto: "4 de Julio en Chapa De 🎆 vimos los fuegos artificiales con mi host family, fue todo muy lindo. Después nos devolvimos por el bosque y con cuea veíamos 😂" },
 { id: 26, src: "/foto26.webp", texto: "La primera vez que fui a tu casa nueva, me diste un house tour y después fuimos al bosque a probar cosas raras como tirarme de una cuerda" },
-{ id: 27, src: "/foto27.webp", texto: "Después de cuidar a Sam todo el día, todas fuimos a la piscina. Muy merecido " },
-{ id: 31, src: "/foto31.webp", texto: "El día después de que llegaste de New York tuviste un viaje largo, pero lleno de amor con tu mamita. Me pone contenta que te reencontraras con ella y que puedan disfrutar juntas. Tambien hicimos pizza en forma de corazón y también comimos cupcakes que habían sobrado del cumpleaños de Liliana" }, 
+{ id: 53, src: "/foto53.webp", texto: "Fue como la segunda vez que te quedaste en mi casa. Vimos una película y a media tú estabas terminando tu cambio de estatus, y yo nomás webiando por ahí 🫶🏽" },
+{ id: 31, src: "/foto31.webp", texto: "El día después de que llegaste de New York tuviste un viaje largo, pero lleno de amor con tu mamita. Me pone contenta que te reencontraras con ella y que puedan disfrutar juntas. Tambien hicimos pizza en forma de corazón y comimos cupcakes que habían sobrado del cumpleaños de Liliana" }, 
 { id: 29, src: "/foto29.webp", texto:  "Esta fue cuando la Sofí estaba cumpliendo años y después conocieron mi cozy place. La Ari andaba loquita con su cámara tomando fotos y de nuevo yo toda tímida jajaa" },
 { id: 20, src: "/foto20.webp", texto: "Nuestras host moms organizaron algo para que pudiéramos ir a line dancing. Se dio y la pasamos estupendo, aunque fue difícil y terminamos haciendo el ridículo… bueno, solo yo. Igual lo pasamos excelente. Después llegamos a la casa a ver una película de miedo con Karina y tú te quedaste dormida", orientation: "horizontal" },
 { id: 22, src: "/foto22.webp", texto: "Hemos visto varios atardeceres desde mi patio, pero ese fue único. El sol estaba hermoso, parecía una bombilla de luz. Estuvimos un ratico afuera, pero después los mosquitos se fueron al chancho y nos tocó entrar" ,orientation: "horizontal" },
@@ -47,7 +47,7 @@ function DiaCabritas() {
   Un pedacito de lo que vivimos juntas en Nevada City 
   <br />
   No puedo creer que hayas pasado este tiempo aquí y disfrutado tanto. Me alegra mucho haber compartido tu compañía, me encanto verte tan feliz.  
-  Todas esas risas, los lugares que descubrimos y esos momentos que nos volvíamos loquitas quedarán para siempre 💛  
+  Todas esas risas, los lugares que descubrimos y esos momentos que nos volvíamos loquitas quedarán para siempre en mi corazón.
   <br />  
   Ahora sí… ¡dale punch al botón! 🥹🤍
 </p>

@@ -16,7 +16,7 @@ const fotos = [
   { id: 39, src: "/foto39.webp", descripcion: "🧚🏻‍♀️🥹" },
   { id: 62, src: "/foto62.webp", descripcion: "Fairfield En tu casa nueva nos invitaste, la Sofi estaba haciendo empanadas, yo cortando cebolla y tú… ahhh 'exprimiendo' unas naranjas para hacer mimosa 😂" },
   { id: 48, src: "/foto48.webp", descripcion: "🧸🦹🏽‍♀️" },
-  { id: 53, src: "/foto53.webp", descripcion: "Fue como la segunda vez que te quedaste en mi casa. Vimos una película y a media tú estabas terminando tu cambio de estatus, y yo nomás webiando por ahí 🫶🏽" },
+  { id: 27, src: "/foto27.webp", descripcion: "Después de cuidar a Sam todo el día, todas fuimos a la piscina. Muy merecido " },
   { id: 36, src: "/foto36.webp", descripcion: "Esto fue cerca de Napa, paramos a almorzar cerca del downtown jaja, y ustedes me decían “este te va a gustar porque tiene pollo” y ya me convencían" },
   { id: 2, src: "/foto2.webp", descripcion: "Diciembre 2024, Con todas las chiquillas  pasándola la raja. Habíamos ido al bowling en Grass Valley, pero estaba horrible, así que nos tocó caminar y tomarnos fotos jajaja" },
   { id: 59, src: "/foto59.webp", descripcion: "Fuimos a Castello di Amorosa en Napa, jaja me da mucha risa esta foto, posamos como esas señoras de 50 años 😂 Bonita experiencia y qué mejor que con ustedes" },

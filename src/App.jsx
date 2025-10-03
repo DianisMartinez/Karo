@@ -103,9 +103,9 @@ function App() {
       Cada foto tiene su historia: risas que no se olvidan, grandes recuerdos y la suerte de haber compartido tanto contigo.
       Nos emociona verte empezar esta nueva etapa en Colombia, y aunque nos dé un poco de nostalgia, sabemos que vas a brillar como siempre.
       <br></br>
-      Eres única, tienes toda una vida por delante, eres increíblemente inteligente y estamos demasiado orgullosas de ti, como siempre te lo decimos
+      Eres única, tienes toda una vida por delante, eres increíblemente inteligente y estamos demasiado orgullosas de ti, como siempre te lo decimos...🫂
       <br></br>
-      No importa dónde vayas, I’m always by your side 🫶🏽 🤍
+      No importa dónde vayas, I’m always by your side my friend 🫶🏽✨
     </p>
 
               {/* Galería de fotos */}
