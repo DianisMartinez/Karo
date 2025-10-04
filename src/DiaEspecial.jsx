@@ -89,13 +89,13 @@ function DiaEspecial() {
                 style={{ height: "500px", objectFit: "cover", borderRadius: "12px" }}
                 loading="lazy"
               />
-              <div className="card-body p-2 d-flex justify-content-center align-items-center">
-              <p className="card-text m-0 text-center fs-6">
-                   {foto.descripcion}
-                   <br />
-                   {foto.title && <strong>{foto.title}</strong>}
-              </p>
-              </div>
+             <div className="card-body p-3">
+  <p className="card-text m-0 text-center fs-6">
+    {foto.descripcion}
+    <br />
+    <strong>{foto.title}</strong>
+  </p>
+</div>
             </div>
           </div>
         ))}
