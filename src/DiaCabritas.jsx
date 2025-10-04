@@ -19,11 +19,17 @@ const fotos = [
 { id: 53, src: "/foto53.webp", texto: "Fue como la segunda vez que te quedaste en mi casa. Vimos una película y a media tú estabas terminando tu cambio de estatus, y yo nomás webiando por ahí 🫶🏽" },
 { id: 31, src: "/foto31.webp", texto: "El día después de que llegaste de New York tuviste un viaje largo, pero lleno de amor con tu mamita. Me pone contenta que te reencontraras con ella y que puedan disfrutar juntas. Tambien hicimos pizza en forma de corazón y comimos cupcakes que habían sobrado del cumpleaños de Liliana" }, 
 { id: 29, src: "/foto29.webp", texto:  "Esta fue cuando la Sofí estaba cumpliendo años y después conocieron mi cozy place. La Ari andaba loquita con su cámara tomando fotos y de nuevo yo toda tímida jajaa" },
+{ id: 18, src: "/foto18.webp", texto: "I like this solo of Karo on another river day a week before ",
+title:"-Lisa"
+  },
+{ id: 18, src: "https://res.cloudinary.com/dwmw7ftnu/image/upload/6318340043517053773_pyd4kn.jpg", texto: "Tarde espectacular con tus hosts y los Gookins en Yuba River. Recuerdo haberme reído muchísimo con Luke y contigo, sobre todo con el , cuando salto de las piedras mientras nos pedía que le cantáramos Mystical Magical de Benson Boone 😆"
+ },
+ { id: 18, src: "https://res.cloudinary.com/dwmw7ftnu/image/upload/IMG_1742_iv8ygz.jpg", texto: "I like this solo of Karo on another river day a week before ",
+title:"-Lisa"
+ },
 { id: 20, src: "/foto20.webp", texto: "Nuestras host moms organizaron algo para que pudiéramos ir a line dancing. Se dio y la pasamos estupendo, aunque fue difícil y terminamos haciendo el ridículo… bueno, solo yo. Igual lo pasamos excelente. Después llegamos a la casa a ver una película de miedo con Karina y tú te quedaste dormida", orientation: "horizontal" },
 { id: 22, src: "/foto22.webp", texto: "Hemos visto varios atardeceres desde mi patio, pero ese fue único. El sol estaba hermoso, parecía una bombilla de luz. Estuvimos un ratico afuera, pero después los mosquitos se fueron al chancho y nos tocó entrar" ,orientation: "horizontal" },
 { id: 28, src: "/foto28.webp", texto: "Después de pasar la noche en tu casa nueva, fuimos al lago y disfrutamos el día relajándonos, haciendo paddle board y comiendo rico",orientation: "horizontal" },
-
-
 ]
 function DiaCabritas() {
   return (
@@ -69,7 +75,9 @@ function DiaCabritas() {
                  loading="lazy"
 />
               <div className="card-body p-2 d-flex justify-content-center align-items-center">
-              <p className="card-text m-0 text-center fs-6">{foto.texto}</p>              </div>
+              <p className="card-text m-0 text-center fs-6">{foto.texto}
+              <br></br>
+              <strong>{foto.title}</strong></p>             </div>
             </div>
           </div>
         ))}
