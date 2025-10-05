@@ -36,7 +36,7 @@ function App() {
       origin: { y: 0.5},               // Punto de inicio en el eje Y (0 = arriba, 1 = abajo)
       gravity: 1,                       // Gravedad (0 = flotan, 1 = caen normal, >1 caen más rápido)
       ticks: 500,                       // Duración de las partículas (cuántos frames duran)
-      scalar: 5                        // Escala (tamaño de los emojis/partículas)
+      scalar: 10                        // Escala (tamaño de los emojis/partículas)
     });
   };
   if (!showMain) {
