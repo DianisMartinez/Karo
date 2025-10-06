@@ -64,6 +64,8 @@ body {
   /* Altura de línea para mejor legibilidad */
   line-height: 1.5;
   white-space: normal !important;
+  max-height: 120px;
+  overflow-y: auto;
   
 
 }
