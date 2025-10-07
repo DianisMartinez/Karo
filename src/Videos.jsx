@@ -58,8 +58,8 @@ const videos = [
   descripcion: "Esto fue en la casa de los abuelos. Habíamos ido a comer y a estar con los niños un rato, pero al final las que terminamos jugando fuimos nosotras, jaja. Comiendo hasta no poder más, pero felices. Tú patinando y yo en el scooter",
   orientation: "vertical" },
 
-  { id: 16, src: "https://res.cloudinary.com/dwmw7ftnu/video/upload/IMG_9728_aj6oww.mp4",
-     descripcion: "Me reí tanto con este video que dije tengo que ponerlo. Estábamos en Scott Flat Lake y nos tocó bajar y subir una montaña para llegar. Compramos Panda Express y estuvimos webiando mucho en el agua, hasta leímos. Cuando ya estábamos por irnos, nos vimos los outfits y no podíamos dejar de reírnos, ¡meras evangelicas! Jajaja",
+  { id: 16, src: "https://res.cloudinary.com/dwmw7ftnu/video/upload/IMG_1145_ti4x7a.mp4",
+     descripcion: "Ultima vez en tahoe antes de que te fueras , karely se rajo con el plan perfecto para compartit y pasar u rato lindo , comimos carne asada y unos chorizos espanoles jeje , hicimos kaya nos mojamos todas jaja una aventura cabe recalcar que hacia mucho frio valio la pena todo!",
      orientation: "vertical" },
 
   { id: 16, src: "https://res.cloudinary.com/dwmw7ftnu/video/upload/IMG_9728_aj6oww.mp4",
