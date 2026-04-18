@@ -1,59 +1,161 @@
-/* Avatar pantalla completa */
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,700;1,400&family=DM+Sans:wght@300;400&display=swap');
+
+/* ── PANTALLA COMPLETA ── */
 .avatar-screen {
   position: fixed;
-  top: 0;
-  left: 0;
-  width: 100vw;
-  height: 100vh;
-  background: url('/public/wall.png') no-repeat center center/cover;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  inset: 0;
+  background: url('/wall.png') no-repeat center center / cover;
   overflow: hidden;
   opacity: 1;
-  transition: opacity 1s ease;
 }
 
-.avatar-screen.fade-out {
-  opacity: 0;
+/* Oscurecer el fondo para que el avatar resalte */
+.avatar-screen::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.35);
+  z-index: 0;
   pointer-events: none;
 }
 
-/* Canvas ocupa todo */
-/* Canvas ocupa todo */
-.avatar-screen canvas {
-  width: 100% !important;
-  height: 100% !important;
-}
-
-/* Estrellitas animadas de fondo */
+/* Estrellitas */
 .avatar-screen::before {
   content: "";
   position: absolute;
-  top: 0;
-  left: 0;
-  width: 200%;
-  height: 200%;
+  top: 0; left: 0;
+  width: 200%; height: 200%;
   background: radial-gradient(white 1px, transparent 1px);
   background-size: 50px 50px;
   animation: moveStars 60s linear infinite;
-  opacity: 0.3;
+  opacity: 0.25;
   z-index: 0;
 }
 
 @keyframes moveStars {
-  from {
-    transform: translate(0, 0);
-  }
-  to {
-    transform: translate(-50px, -50px);
-  }
+  from { transform: translate(0, 0); }
+  to   { transform: translate(-50px, -50px); }
 }
 
-/* Aseguramos que el canvas quede por encima de las estrellitas */
+/* Canvas por encima de los overlays */
 .avatar-screen canvas {
-  position: relative;
+  position: absolute !important;
+  inset: 0;
+  width: 100% !important;
+  height: 100% !important;
   z-index: 1;
 }
 
-/* Distinct colors for each firework with multiple particles */
+/* ── SALIDA ESPECTACULAR ── */
+.av-exit {
+  animation: av-flash-fade 900ms ease forwards;
+}
+
+@keyframes av-flash-fade {
+  0%   { opacity: 1; filter: brightness(1); }
+  30%  { opacity: 1; filter: brightness(3) saturate(0); }
+  100% { opacity: 0; filter: brightness(0); }
+}
+
+/* ── TEXTO CENTRAL ── */
+.av-welcome {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 10;
+  text-align: center;
+  pointer-events: none;
+  opacity: 0;
+  transition: opacity 1.2s ease, transform 1.2s ease;
+  transform: translate(-50%, -44%);
+}
+
+.av-welcome--show {
+  opacity: 1;
+  transform: translate(-50%, -50%);
+}
+
+.av-sub {
+  font-family: 'DM Sans', sans-serif;
+  font-weight: 300;
+  font-size: clamp(0.75rem, 2vw, 1rem);
+  color: rgba(255, 255, 255, 0.7);
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  margin: 0 0 12px 0;
+  animation: av-shimmer 3s ease-in-out infinite;
+}
+
+@keyframes av-shimmer {
+  0%, 100% { opacity: 0.7; }
+  50%       { opacity: 1; }
+}
+
+.av-title {
+  font-family: 'Playfair Display', Georgia, serif;
+  font-weight: 700;
+  font-size: clamp(2.8rem, 8vw, 6rem);
+  line-height: 1.05;
+  color: #fff;
+  margin: 0;
+  text-shadow:
+    0 0 40px rgba(255, 220, 100, 0.6),
+    0 4px 30px rgba(0, 0, 0, 0.5);
+  /* Gradiente dorado en el texto */
+  background: linear-gradient(160deg, #fff 30%, #ffe066 70%, #ffb347 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+/* ── BARRA DE PROGRESO ── */
+.av-bar-wrap {
+  position: absolute;
+  bottom: 32px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: min(480px, 90vw);
+  z-index: 10;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 14px;
+}
+
+.av-bar-track {
+  width: 100%;
+  height: 3px;
+  background: rgba(255, 255, 255, 0.15);
+  border-radius: 99px;
+  overflow: hidden;
+}
+
+.av-bar-fill {
+  height: 100%;
+  background: linear-gradient(90deg, #ffb347, #ffe066, #fff);
+  border-radius: 99px;
+  transition: width 0.1s linear;
+  box-shadow: 0 0 10px rgba(255, 220, 100, 0.8);
+}
+
+/* ── BOTÓN SALTAR ── */
+.av-skip {
+  background: transparent;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  border-radius: 99px;
+  padding: 6px 20px;
+  color: rgba(255, 255, 255, 0.55);
+  font-family: 'DM Sans', sans-serif;
+  font-size: 0.8rem;
+  letter-spacing: 0.1em;
+  cursor: pointer;
+  transition: all 0.25s ease;
+  backdrop-filter: blur(6px);
+}
+
+.av-skip:hover {
+  border-color: rgba(255, 220, 100, 0.7);
+  color: #ffe066;
+  box-shadow: 0 0 14px rgba(255, 200, 50, 0.25);
+}
