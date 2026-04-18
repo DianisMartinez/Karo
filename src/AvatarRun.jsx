@@ -4,9 +4,7 @@ import { useGLTF } from "@react-three/drei";
 import "./avatar.css";
 
 function AvatarModel() {
-  const { scene } = useGLTF(
-    "https://models.readyplayer.me/68d1f3afb89f96000dad1d5d.glb"
-  );
+  const { scene } = useGLTF("/avatar.glb");
   const ref = useRef();
 
   // Velocidad de carrera
