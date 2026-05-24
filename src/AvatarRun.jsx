@@ -1,17 +1,6 @@
-import { useEffect, useRef, useState } from "react";
-import { Canvas, useFrame } from "@react-three/fiber";
-import { useGLTF, SpotLight } from "@react-three/drei";
+import { useEffect, useState } from "react";
 import confetti from "canvas-confetti";
 import "./avatar.css";
-
-function AvatarModel() {
-  const { scene } = useGLTF("/avatar.glb");
-  const ref = useRef();
-  useFrame(() => {
-    if (ref.current) ref.current.position.x += 0.02;
-  });
-  return <primitive ref={ref} object={scene} scale={4} position={[-6, -4, 0]} />;
-}
 
 function AvatarRun({ onFinish }) {
   const [fading, setFading] = useState(false);
@@ -39,7 +28,6 @@ function AvatarRun({ onFinish }) {
   // Explosión final + fade
   useEffect(() => {
     const t = setTimeout(() => {
-      // Explosión de emojis igual que en tu App.jsx
       const heart  = confetti.shapeFromText({ text: "🫶🏽", scalar: 3 });
       const otter  = confetti.shapeFromText({ text: "🦦",   scalar: 3 });
       const star   = confetti.shapeFromText({ text: "✨",   scalar: 3 });
@@ -58,7 +46,6 @@ function AvatarRun({ onFinish }) {
         scalar: 9,
       });
 
-      // Flash blanco + fade después de 600ms
       setTimeout(() => {
         setFading(true);
         setTimeout(onFinish, 900);
@@ -76,6 +63,11 @@ function AvatarRun({ onFinish }) {
         <h1 className="av-title">Bienvenida<br />My Shayla</h1>
       </div>
 
+      {/* ── AVATAR ANIMADO (rotate — css-animations repo) ── */}
+      <div className="av-loading">
+        <img src="/x.png" alt="avatar" className="av-loading-img" />
+      </div>
+
       {/* ── BARRA DE PROGRESO ── */}
       <div className="av-bar-wrap">
         <div className="av-bar-track">
@@ -88,15 +80,6 @@ function AvatarRun({ onFinish }) {
           saltar ✕
         </button>
       </div>
-
-      {/* ── THREE.JS ── */}
-      <Canvas>
-        <ambientLight intensity={0.15} />
-        <SpotLight position={[3, 6, 4]}  angle={0.45} penumbra={0.8} intensity={3.5} color="#ffe0a0" castShadow />
-        <SpotLight position={[-4, 4, -2]} angle={0.5}  penumbra={1}   intensity={2}   color="#a0c8ff" castShadow={false} />
-        <pointLight position={[0, -2, 2]} intensity={0.6} color="#ffcc88" />
-        <AvatarModel />
-      </Canvas>
     </div>
   );
 }
